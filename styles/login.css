@@ -27,7 +27,7 @@ header {
     width: 20%;
     align-items: center;
     margin-left: 3vw;
-    height: 50vh;
+    height: 45vh;
     border-bottom: solid rgb(71, 71, 71) 0.1vh;
     border-left: solid rgb(71, 71, 71) 0.1vh;
     border-right: solid rgb(71, 71, 71) 0.1vh;
@@ -237,7 +237,7 @@ footer li:hover {
     .nav-login {
         width: 25%;
         margin-left: 4vw;
-        height: 45vh;
+        height: 40vh;
     }
     .logo h1 {
         font-size: 8vw;
@@ -271,7 +271,7 @@ footer li:hover {
 @media screen and (max-width: 768px){
     .nav-login {
         width: 30vw;
-        height: 45vh;
+        height: 37vh;
     }
     .logo h1 {
         font-size: 10vw;
@@ -302,7 +302,7 @@ footer li:hover {
     }
     .nav-login {
         width: 35vw;
-        height: 35vh;
+        height: 30vh;
         margin-left: 2vw;
     }
     .logo h1 {
