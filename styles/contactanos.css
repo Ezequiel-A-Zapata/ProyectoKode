@@ -23,7 +23,7 @@ header {
     width: 22vw;
     align-items: center;
     margin-left: 8vh;
-    height: 50vh;
+    height: 45vh;
     border-bottom: solid rgb(71, 71, 71) 0.1vh;
     border-left: solid rgb(71, 71, 71) 0.1vh;
     border-right: solid rgb(71, 71, 71) 0.1vh;
@@ -38,7 +38,7 @@ header {
 }
 .logo h1 {
     font-weight: 200;
-    font-size: 500%;
+    font-size: 7vw;
     font-family: "fuente-logo";
     color: rgb(20, 20, 20);
 }
@@ -50,7 +50,7 @@ header {
     margin-left: 3vh;
     display: flex;
     flex-direction: column;
-    margin-top: 12vh;
+    margin-top: 5vh;
     gap: 3vh;
     width: 22vh;
 }
@@ -84,6 +84,7 @@ header {
     align-items: center;
     margin-right: 3vh;
     font-size: 65%;
+    margin-top: 1.8vh;
 }
 main {
     /* background-image: url(../img/imagen\ index.webp); */
@@ -91,22 +92,84 @@ main {
     background-color:rgb(241, 228, 208);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     flex-direction: column;
     gap: 10vh;
 }
-.formulario {
+form {
     display: flex;
     flex-direction: column;
-    gap: 3vh;
+    margin-right: 25vw;
+    width: 35vw;
+    margin-top: 20vh;
 }
-.datos {
+.titulo-1{
+    font-family: "fuente-logo";
+    font-size: 150%;
+}
+.nya-contenedor {
     display: flex;
     flex-direction: column;
-    gap: 2vh
+    margin-top: 3vh;
 }
-.mensaje {
-    width: 100vh;
+.nya-contenedor label {
+    font-family:"Neue-Helvetica","Helvetica","Arial","sans-serif";
+    font-size: 70%;
+    margin-left: 5%;
+}
+.nya-contenedor input {
+    background-color:rgb(241, 228, 208) ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid black 1px;
+    font-size: 80%;
+    height: 4vh;
+}
+.email-contenedor {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+.email-contenedor label {
+    font-family:"Neue-Helvetica","Helvetica","Arial","sans-serif";
+    font-size: 80%;
+    margin-left: 5%;
+}
+.email-contenedor input {
+    background-color:rgb(241, 228, 208) ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid black 1px;
+    font-size: 80%;
+    height: 4vh;
+} 
+.consulta {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-left: 2vw;
+}
+.consulta p {
+    font-family:"Neue-Helvetica","Helvetica","Arial","sans-serif" ;
+    font-size: 80%;
+    margin-left: 5%;
+}
+.consulta textarea {
+    border: solid black 1px;
+    background-color:rgb(255, 250, 243) ;
+    /* box-shadow: 2px 3px 5px; */
+    
+}
+.boton {
+    margin-top: 4vh;
+    border: solid black 1px;
+    background-color:rgb(255, 250, 243) ;
+    font-family:"Neue-Helvetica","Helvetica","Arial","sans-serif" ;
+    font-size: 70%;
+    height: 4vh;
+
 }
 .container {
     background-color:rgb(255, 255, 254);

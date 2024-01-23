@@ -168,7 +168,6 @@ form section {
     font-family:"Neue-Helvetica","Helvetica","Arial","sans-serif" ;
     font-size: 70%;
     height: 4vh;
-
 }
 
 
@@ -212,7 +211,7 @@ footer li:hover {
 }
 .conatiner div {
     width: 100%;
-}
+} 
 .container h2 {
     font-family:"fuente-logo";
     font-weight: 100;

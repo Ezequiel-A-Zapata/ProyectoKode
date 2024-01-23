@@ -15,14 +15,11 @@
             </a>
             <ul class="menu">
             <li>
-                <a href="./pages/login.html"><p>INICIAR SESION</p></a>
+                <a href="./login.html"><p>INICIAR SESION</p></a>
             </li>
             <li>
-                <a href="./pages/summer23-24.html">
+                <a href="./coleccion.html">
                 <p>COLECCION VERANO 23/24</p></a>
-            </li>
-            <li>
-                <a href="./pages/coleccion.html"><p>CONTACTANOS</p></a>
             </li>
             </ul>
         </nav>
@@ -33,16 +30,22 @@
         </div>
     </header>
     <main>
-        <section class="formulario">
-            <div class="datos">
-                <input type="text" placeholder="Nombre y Apellido"/>
-            <input type="email" placeholder="Email"/>
+        <form action="form.php" method="post">
+            <p class="titulo-1">¿TIENES UNA CONSULTA?...ENVIANOS</p>
+            <div class="nya-contenedor">
+                <label for="nombre-y-apellido">NOMBRE Y APELLIDO:</label>
+                <input type="text" id="nombre-y-apellido" placeholder="NOMBRE Y APELLIDO" required/>
             </div>
-        </section>
-        <div class="mensaje">
-            <input  type="text" placeholder="Mensaje"/>
+            <div class="email-contenedor">
+                <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Email" required/>
+            </div>
+        <div class="consulta">
+            <p>CONSULTA :</p>
+            <textarea cols="60" rows="9" placeholder="Escribe tu Consulta" required></textarea>
         </div>
-        <button>ENVIAR</button>
+            <input class="boton" type="submit" value="ENVIAR">
+        </form>
     </main>
     <footer class="container">
         <div class="row">

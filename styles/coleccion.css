@@ -38,7 +38,7 @@ header {
 }
 .logo h1 {
     font-weight: 200;
-    font-size: 500%;
+    font-size: 7vw;
     font-family: "fuente-logo";
     color: rgb(20, 20, 20);
 }
@@ -52,7 +52,7 @@ header {
     margin-bottom: 3vh;
     margin-top: 3vh;
     padding: 0;
-    gap: 3%;
+    gap: 20%;
     justify-content: center;
 }
 .menu a {
