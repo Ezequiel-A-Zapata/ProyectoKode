@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family:"fuente-logo";
+    src: url(../fuentes/DMSerifDisplay-Italic.ttf);
+}
+/* .header-main {
+    background-image: url(../img/imagen\ index.webp);
+} */
+header {
+    display: flex;
+    height: 20vh;
+    gap: 63vh;
+    background-image: url(../img/imagen\ index.webp);
+    position: fixed;
+    width: 100vw;
+}
+.nav-buscador {
+    background-color: beige;
+    z-index: 1;
+    width: 22vw;
+    align-items: center;
+    margin-left: 8vh;
+    height: 50vh;
+    border-bottom: solid rgb(71, 71, 71) 0.1vh;
+    border-left: solid rgb(71, 71, 71) 0.1vh;
+    border-right: solid rgb(71, 71, 71) 0.1vh;
+}
+.nav-buscador:hover {
+    background-color: rgb(173, 173, 152);
+}
+.logo {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.logo h1 {
+    font-weight: 200;
+    font-size: 7vw;
+    font-family: "fuente-logo";
+    color: rgb(20, 20, 20);
+}
+.logo h1:hover { 
+    color: rgb(255, 255, 255);
+}
+.menu {
+    list-style-type: none;
+    margin-left: 3vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12vh;
+    gap: 3vh;
+    width: 22vh;
+}
+.menu a {
+    text-decoration: none;
+}
+.menu p {
+    font-family:"Neue-Helvetica","Helvetica","Arial","sans-serif";
+    color: rgb(29, 29, 29);
+    font-size: 75%;
+}
+.menu p:hover {
+    color: rgb(255, 255, 255);
+}
+.buscador-buscador {
+    background-color: beige; 
+    width: 70vh;
+    display:flex;
+    justify-content: end;
+    height: 3.9vh;
+    border: black solid 0.1vh;
+    text-decoration: none;
+    margin-top: 7vh;
+    margin-right: 20vh;
+}
+.buscador-buscador p {
+    font-family: "Neue-Helvetica","Helvetica","Arial","sans-serif";
+    text-align: center;
+    color: rgb(160, 160, 160);
+    display: flex;
+    align-items: center;
+    margin-right: 3vh;
+    font-size: 65%;
+}
