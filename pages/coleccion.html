@@ -6,101 +6,156 @@
     <title>Coleccion Verano 23/24 | KODE Argentina</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/coleccion.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <section class="header-main">
-        <header>
-          <nav class="nav-coleccion">
-              <a href="../index.html" class="logo">
-                <h1>KODE</h1>
-              </a>
-              <ul class="menu">
-                <li>
-                  <a href="./login.html"><p>INICIAR SESION</p></a>
-                </li>
-                <li>
-                  <a href="./contactanos.html"><p>CONTACTANOS</p></a>
-                </li>
-              </ul>
-              <div class="separador">
-              <hr>
-            </div>
-            <ul class="clasificacion">
-                <li><a id="remeras">REMERAS</a></li>
-                <li><a id="camisas">CAMISAS</a></li>
-                <li><a id="pantalones">PANTALONES</a></li>
-                <li><a id="trajes-de-baño">TRAJES DE BAÑO</a></li>
-                <li><a id="accesorios">ACCESORIOS</a></li>
-            </ul>
-            </nav>
-            <div class="contenedor buscador">
-              <a href="../pages/buscador.html" class="buscador-coleccion">
-                <p>BUSCAR</p>
-              </a>
-            </div>
-        </header>
-        <main>
-          <section class="box-coleccion">
+  <header class="header-general">
+    <nav class="nav-general">
+        <a href="../index.html" class="logo-general">
+          <h1>KODE</h1>
+        </a>
+        <p class="extra">__</p>
+        <ul class="menu-general">
+          <li>
+            <a href="../pages/login.html"
+              ><p>INICIAR SESION</p></a>
+          </li>
+          <li>
+            <a href="../pages/contactanos.html"><p>CONTACTANOS</p></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="box-buscador-general">
+        <a href="../pages/buscador.html" class="buscador-general">
+          <p>BUSCAR</p>
+        </a>
+      </div>
+  </header>
+        <main class="main-coleccion">
+          <div class="box-clasificacion" >
+          <ul class="clasificacion">
+            <li><a id="remeras-id">REMERAS</a></li>
+            <li><a id="camisas-id">CAMISAS</a></li>
+            <li><a id="pantalones-id">PANTALONES</a></li>
+            <li><a id="bermudas-id">BERMUDAS</a></li>
+            <li><a id="accesorios-id">ACCESORIOS</a></li>
+        </ul>
+        </div>
+        <section class="box-coleccion">
           <section class="remeras" for="remeras">
-            <div class="remera-item primero">remera 1</div>
-            <div class="remera-item segundo">remera 2</div>
-            <div class="remera-item tercero">remera 3</div>
-            <div class="remera-item cuarto">remera 4</div>
-            <div class="remera-item quinto">remera 5</div>
-            <div class="remera-item sexto">remera 6</div>
-          </section>
-          <section class="camisas" for="camisas">
-            <div class="camisa-item primero ">camisa 1</div>
-            <div class="camisa-item segundo">camisa 2</div>
-            <div class="camisa-item tercero">camisa 3</div>
-            <div class="camisa-item cuarto">camisa 4</div>
-            <div class="camisa-item quinto">camisa 5</div>
-            <div class="camisa-item sexto">camisa 6</div>
-          </section>
-          <section class="pantalones" for="pantalones">
-            <div class="pantalon-item primero">pantalon 1</div>
-            <div class="pantalon-item segundo">pantalon 2</div>
-            <div class="pantalon-item tercero">pantalo 3</div>
-            <div class="pantalon-item cuarto">pantalon 4</div>
-            <div class="pantalon-item quinto">pantalon 5</div>
-            <div class="pantalon-item sexto">pantalon 6</div>
-          </section>
-          <section class="trajes-de-baño" for="trajes-de-baño">
-            <div class="trajedebaño-item primero">traje de baño 1</div>
-            <div class="trajedebaño-item segundo">traje de baño 2</div>
-            <div class="trajedebaño-item tercero">traje de baño 3</div>
-            <div class="trajedebaño-item cuarto">traje de baño 4</div>
-            <div class="trajedebaño-item quinto">traje de baño 5</div>
-            <div class="trajedebaño-item sexto">traje de baño 6</div>
-          </section>
-          <section class="accesorios" for="accesorios">
-            <div class="accesorio-item primero">accesorio 1</div>
-            <div class="accesorio-item segundo">accesorio 2</div>
-            <div class="accesorio-item tercero">accesorio 3</div>
-            <div class="accesorio-item cuarto">accesorio 4</div>
-            <div class="accesorio-item quinto">accesorio 5</div>
-            <div class="accesorio-item sexto">accesorio 6</div>
-          </section>
-          </section>
-        </main>
-        <!-- <footer>
-            <div>
-                <h2>UNETE A NOSOTROS</h2>
-                <ul class="footer-descripcion">
-                  <li>
-                    <a><p>INSTAGRAM</p></a>
-                  </li>
-                  <li>
-                    <a><p>TWITTER</p></a>
-                  </li>
-                  <li>
-                    <a><p>FACEBOOK</p></a>
-                  </li>
-                </ul>
+            <div class="remera-item r-principal"><img src="../img/ropa KODE/remeras/REMERA0.jpg" class="remera-0"  alt="remera-0">
+              <div class="REMERA0">
+                <p>+</p>
               </div>
-        </footer> -->
-        <footer class="container">
-          <div class="row">
+            </div>
+            <div class="remera-item r-secundario"><img src="../img/ropa KODE/remeras/REMERA1.jpg" class="remera-1" alt="remera-1">
+              <div class="REMERA1">
+                <p>+</p>
+              </div>
+            </div>
+            <div class="remera-item r-secundario"><img src="../img/ropa KODE/remeras/REMERA2.jpg" class="remera-2" alt="remera-2">
+              <div class="REMERA1">
+                <p>+</p>
+              </div>
+            </div>
+            <div class="remera-item r-secundario"><img src="../img/ropa KODE/remeras/REMERA4.jpg" class="remera-3" alt="remera-3">
+              <div class="REMERA1">
+                <p>+</p>
+              </div>
+      </section>
+      <section class="camisas" for="camisas">
+        <div class="camisa-item c-principal "><img src="../img/ropa KODE/camisas/CAMISA0.jpg" class="camisa-0" alt="camisa-0">
+          <div class="CAMISA0">
+            <p>+</p>
+          </div>
+        </div>
+        <div class="camisa-item c-secundario"><img src="../img/ropa KODE/camisas/CAMISA1.jpg" class="camisa-1" alt="camisa-1">
+          <div class="CAMISA1">
+            <p>+</p>
+          </div>
+        </div>
+        <div class="camisa-item c-secundario"><img src="../img/ropa KODE/camisas/CAMISA2.jpg" class="camisa-2" alt="camisa-2">
+          <div class="CAMISA1">
+            <p+A</p>
+          </div>
+        </div>
+        <div class="camisa-item c-secundario"><img src="../img/ropa KODE/camisas/CAMISA3.jpg" class="camisa-3" alt="camisa-3">
+          <div class="CAMISA1">
+            <p>+</p>
+          </div>
+        </div>
+      </section>
+      <section class="pantalones" for="pantalones">
+        <div class="pantalon-item p-principal"><img src="../img/ropa KODE/pantalones/PANTALON0.jpg" class="pantalon-0" alt="pantalon-0">
+          <div class="PANTALON0">
+            <p>+</p>
+          </div>
+        </div>
+        <div class="pantalon-item p-secundario"><img src="../img/ropa KODE/pantalones/PANTALON1.jpg"class="pantalon-1" alt="pantalon-1">
+          <div class="PANTALON1">
+            <p>+</p>
+          </div>
+        </div>
+        <div class="pantalon-item p-secundario"><img src="../img/ropa KODE/pantalones/PANTALON2.jpg"class="pantalon-2" alt="pantalon-2">
+          <div class="PANTALON1">
+            <p>+</p>
+          </div>
+        </div>
+        <div class="pantalon-item p-secundario"><img src="../img/ropa KODE/pantalones/PANTALON3.jpg"class="pantalon-3" alt="pantalon-3">
+          <div class="PANTALON1">
+            <p>+</p>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section class="bermudas" for="bermudas">
+        <div class="bermudas-item b-principal"><img src="../img/ropa KODE/bermudas/BERMUDAS0.jpg" class="bermuda-0" alt="bermuda-0">
+          <div class="BERMUDA0">
+            <p>+</p>
+          </div>
+        </div>
+        <div class="bermudas-item b-secundario"><img src="../img/ropa KODE/bermudas/BERMUDAS1.jpg" class="bermuda-1" alt="bermuda-1">
+          <div class="BERMUDA1">
+            <p>+</p>
+          </div>
+        </div>
+        <div class="bermudas-item b-secundario"><img src="../img/ropa KODE/bermudas/BERMUDAS2.jpg" class="bermuda-2" alt="bermuda-2">
+          <div class="BERMUDA1">
+            <p>+</p>
+          </div>
+        </div>
+        <div class="bermudas-item b-secundario"><img src="../img/ropa KODE/bermudas/BERMUDAS3.jpg" class="bermuda-3" alt="bermuda-3">
+          <div class="BERMUDA1">
+            <p>+</p>
+          </div>
+        </div>
+      </section>
+      <section class="accesorios" for="accesorios">
+        <div class="accesorio-item a-principal"><img src="../img/ropa KODE/accesorios/ACCESORIO0.jpg" class="accesorio-0" alt="accesorio-0">
+          <div class="ACCESORIO0">
+            <p>+</p>
+          </div>
+        </div>
+        <div class="accesorio-item a-secundario"><img src="../img/ropa KODE/accesorios/ACCESORIO1.jpg" class="accesorio-1" alt="accesorio-1">
+          <div class="ACCESORIO1">
+            <p>+</p>
+          </div>
+        </div>
+        <div class="accesorio-item a-secundario"><img src="../img/ropa KODE/accesorios/ACCESORIO2.jpg" class="accesorio-2" alt="accesorio-2">
+          <div class="ACCESORIO1">
+            <p>+</p>
+          </div>
+        </div>
+        <div class="accesorio-item a-secundario"><img src="../img/ropa KODE/accesorios/ACCESORIO3.jpg" class="accesorio-3" alt="accesorio-3">
+          <div class="ACCESORIO1">
+            <p>+</p>
+          </div>
+        </div>
+      </section>
+      </section>
+        </main>
+        <footer class="container-flow footer-coleccion">
+          <div class="row text-footer">
               <h2 class="col-12 d-flex justify-content-center">UNETE A NOSOTROS</h2>
               <div class="redes col-12 d-flex justify-content-center">
               <a href="../index.html" class="col-4 d-flex justify-content-center">INSTAGRAM</a>

@@ -1,0 +1,185 @@
+body{
+    .header-general {
+        display: flex;
+        height: 20vh;
+        background-image: url(../img/imagen\ index.webp);
+        width: 100vw;
+        position: fixed;
+        background-position: top;
+        background-size: cover;
+        z-index: 1;
+        box-shadow:1px 2px 10px 0px rgb(108, 108, 108);
+        @include mobile {
+            flex-direction: column;
+            height: 13vh;
+        }
+        .nav-general {
+            display: flex;
+            flex-direction: column;
+            background-color: nth($list: $colores, $n: 1);
+            z-index: 1;
+            width: 20%;
+            align-items: center;
+            margin-left: 3vw;
+            height: 26vh;
+            border-bottom: solid nth($list: $colores, $n:2 ) 0.1vh;
+            border-left: solid nth($list: $colores, $n:2 ) 0.1vh;
+            border-right: solid nth($list: $colores, $n:2 ) 0.1vh;
+            box-shadow: 0px 2px 10px 0px rgb(108, 108, 108)  ;
+            -webkit-transition: 0.7s;
+            &:hover {
+                background-color: nth($list: $colores, $n:3 );
+                height: 45vh;
+                transition: 0.7s;
+                @include notebook{
+                    height: 43vh;
+                }
+                @include tablet {
+                    height: 39vh;
+                }
+                @include mobile {
+                    height: 37vh;
+                }
+            }
+            &:hover .menu-general{
+                opacity: 100%;
+                transition: 0.7s;
+            }
+            &:hover .extra {
+                opacity: 0%;
+            }
+            @include notebook {
+                width: 21%;
+            }
+            @include tablet {
+                width: 25%;
+                height: 24vh;
+            }
+            @include mobile {
+                width: 35%;
+            }
+            .logo-general {
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                h1 {
+                    font-weight: 200;
+                    font-size: 7vw;
+                    font-family: "fuente-logo";
+                    color: rgb(20, 20, 20);
+                    -webkit-transition: 0.3s;
+                    &:hover { 
+                        color: nth($list: $colores, $n:4 );
+                        font-size: 7.3vw;
+                        transition: 0.3s;
+                    }
+                    @include notebook{
+                        font-size: 7.5vw;
+                    }
+                    @include tablet{
+                        font-size: 9vw;
+                    }
+                    @include mobile {
+                        font-size: 12vw;
+                    }
+                }
+            }
+            .extra{
+                display: flex;
+                justify-content: center;
+                margin-top: 2vh;
+                color: nth($list: $colores, $n:2 );
+                margin-bottom: 0;
+                @include notebook {
+                    margin-top: 4vh;
+                    margin-bottom: 0;
+                }
+                @include tablet{
+                    margin-top: 2vh;
+                }
+            }
+            .menu-general {
+                list-style-type: none;
+                margin-left: 1vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                opacity: 0%;
+                height: 40%;
+                width: 15vw;
+                margin-top: 1vh;
+                padding: 0;
+                margin-left: 0;
+                a {
+                    text-decoration: none;
+                }
+                p {
+                    font-family:"Neue-Helvetica","Helvetica","Arial","sans-serif";
+                    color: rgb(29, 29, 29);
+                    font-size: 70%;
+                    &:hover{
+                        color: nth($list: $colores, $n:4 );
+                        font-size: 75%;
+                    }
+                    @include tablet{
+                        font-size: 65%;
+                    }
+                    
+                }
+                @include mobile {
+                    width: 27vw;
+                }
+            }
+        }
+        .box-buscador-general{
+            margin-left: 33%;
+            width: 30.5vw;
+            -webkit-transition: 0.7s;
+            &:hover {
+                margin-left: 31%;
+                width: 33.5vw;
+                transition:0.7s ;
+                }
+                @include notebook{
+                    width: 32vw;
+                }
+                @include tablet {
+                    width: 34vw;
+                    margin-left: 30%;
+                }
+                @include mobile {
+                    margin-top: 80vh;
+                    margin-left: 2vw;
+                    width: 94vw;
+                    position: fixed;
+                }
+            }
+            .buscador-general {
+                background-color: nth($list: $colores, $n:4 ); 
+                width: 100%;
+                display:flex;
+                justify-content: end;
+                height: 3.8vh;
+                border: black solid 0.1vh;
+                text-decoration: none;
+                margin-top: 7vh;
+                box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                p {
+                    font-family: "Neue-Helvetica","Helvetica","Arial","sans-serif";
+                    text-align: center;
+                    color: nth($list: $colores, $n:3 );
+                    display: flex;
+                    align-items: center;
+                    margin-right: 3vh;
+                    font-size: 65%;
+                    margin-top: 1.8vh;
+                    @include notebook {
+                        font-size: 63%;
+                    }
+                    @include tablet{
+                        font-size: 61% ;
+                    }
+                }
+            }
+        }
+    }

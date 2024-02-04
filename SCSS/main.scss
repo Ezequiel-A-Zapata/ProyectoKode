@@ -1,0 +1,20 @@
+@import "utilities/mq-index";
+@import "utilities/reset.scss";
+@import "utilities/variables";
+@import "utilities/globals";
+
+@import "components/header-general";
+
+
+@import "pages/index";
+@import "pages/login-main";
+@import "pages/contactanos-main";
+@import "pages/coleccion-main";
+@import "pages/buscador-main";
+
+
+@import "components/footer-general";
+
+
+
+@import "utilities/mq-index";

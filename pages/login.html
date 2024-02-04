@@ -6,71 +6,54 @@
     <title>Login | KODE Argentina</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
-    <section class="header-main">
-    <header>
-      <nav class="nav-login">
-          <a href="../index.html" class="logo">
+    <header class="header-general">
+      <nav class="nav-general">
+          <a href="../index.html" class="logo-general">
             <h1>KODE</h1>
           </a>
-          <ul class="menu">
+          <p class="extra">__</p>
+          <ul class="menu-general">
             <li>
               <a href="../pages/coleccion.html"
-                ><p>COLECCION VERANO 23/24</p></a
-              >
+                ><p>COLECCION VERANO 23/24</p></a>
             </li>
             <li>
               <a href="../pages/contactanos.html"><p>CONTACTANOS</p></a>
             </li>
           </ul>
         </nav>
-        <div class="contenedor-buscador">
-          <a href="../pages/buscador.html" class="buscador-login">
+        <div class="box-buscador-general">
+          <a href="../pages/buscador.html" class="buscador-general">
             <p>BUSCAR</p>
           </a>
         </div>
     </header>
-    <main>
-      <form action="form.php" method="post">
-        <p class="titulo-1">ACCEDE A TU CUENTA</p>
-        <section class="datos-cuenta">
-          <div class="div-email">
+    <main class="main-login">
+      <form class="formulario-login" action="form.php" method="post">
+        <h2 class="titulo-1">ACCEDE A TU CUENTA</h2>
+        <section class="datos-cuenta-login">
+          <div class="email-login">
             <label for="email"> E-MAIL</label>
               <input type="email" id="email" required/>
           </div>
-          <div class="div-contraseña">
+          <div class="contraseña-login">
             <label for="contraseña">CONTRASEÑA</label>
             <input class="contraseña" type="password" id="contraseña" required/>
           </div>
-          <input class="boton" type="submit" value="INICIAR SESION">
+          <input class="boton-login" type="submit" value="INICIAR SESION">
         </section>
-        <section>
-            <p class="titulo-2"> ¿AUN NO TIENES UNA CUENTA?</p>
-            <a class="registrate" href="../index.html">
+        <section class="registro-login">
+            <h3 class="titulo-2"> ¿AUN NO TIENES UNA CUENTA?</h3>
+            <a class="registrate-login" href="../index.html">
                 <p>REGISTRATE</p>
             </a>
         </section>
       </form>
     </main>
-  </section>
-    <!-- <footer>
-      <div>
-        <h2>UNETE A NOSOTROS</h2>
-        <ul class="footer-descripcion">
-          <li>
-            <a><p>INSTAGRAM</p></a>
-          </li>
-          <li>
-            <a><p>TWITTER</p></a>
-          </li>
-          <li>
-            <a><p>FACEBOOK</p></a>
-          </li>
-        </ul>
-      </div>
-    </footer> -->
-    <footer class="container">
+    <footer class="container-flow">
       <div class="row">
           <h2 class="col-12 d-flex justify-content-center">UNETE A NOSOTROS</h2>
           <div class="redes col-12 d-flex justify-content-center">

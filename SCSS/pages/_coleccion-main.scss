@@ -1,0 +1,420 @@
+
+
+.main-coleccion {
+    height: 630vh;
+    background-color: nth($list: $colores, $n:5 );
+    display: flex;
+    justify-content:space-between;
+    z-index: 1;
+    .box-clasificacion {
+        margin-top: 23%;
+        margin-left: 3vw;
+        width: 17%;
+        display: flex;
+        height: 45vh;
+        border: solid nth($list: $colores, $n:2 ) 1px;
+        background-color: nth($list: $colores, $n: 1);
+        position: fixed;
+        box-shadow: 0px 2px 10px 0px rgb(108, 108, 108)  ;
+        .clasificacion {
+            list-style-type: none;
+            font-family:"Neue-Helvetica","Helvetica","Arial","sans-serif";
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 75%;
+            padding: 0;
+            margin-bottom: 0;
+            gap:5vh;
+            margin-left: 2vw;
+        }
+    }
+    .box-coleccion {    
+        width: 75%;
+        height: 375vh;
+        margin-top: 23vh;
+        margin-left: 25vw;
+        .remeras {
+            height: 113vh;
+            width: 100%;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            .remera-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .r-principal {
+                grid-column: 1/4;
+                height: 65vh;
+                .remera-0{
+                    height: 63vh ;
+                    width: 22vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                    &:hover .REMERA0{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+                .REMERA0{
+                    display: flex;
+                    position: absolute;
+                    margin-top:58vh;
+                    font-size: 130%;
+                }
+            }
+            .r-secundario{
+                height: 45vh;
+                margin-top: 3vh;
+                position: relative;
+                .remera-1{
+                    height: 43vh;
+                    width: 15vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+                .REMERA1{
+                    display: flex;
+                    position: absolute;
+                    margin-top: 40vh;
+                    font-size: 130%;
+                }
+                .remera-2{
+                    height: 43vh;
+                    width: 15vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+                .remera-3{
+                    height: 43vh;
+                    width: 15vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+        .camisas {
+            margin-top: 10vh;
+            height: 110vh;
+            width: 100%;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns:repeat(3, 1fr);
+            .camisa-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .c-principal {
+                grid-column: 1/4;
+                height: 65vh;
+                .camisa-0{
+                    height: 63vh ;
+                    width: 22vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+                .CAMISA0{
+                    display: flex;
+                    position: absolute;
+                    margin-top:58vh;
+                    font-size: 130%;
+                }
+            }
+            .c-secundario{
+                height: 45vh;
+                margin-top: 3vh;
+                position: relative;
+                .camisa-1{
+                    height: 43vh;
+                    width: 15vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+                .CAMISA1{
+                    display: flex;
+                    position: absolute;
+                    margin-top: 40vh;
+                    font-size: 130%;
+                }
+                .camisa-2{
+                    height: 43vh;
+                    width: 15vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+                .camisa-3{
+                    height: 43vh;
+                    width: 15vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+        .pantalones {
+            margin-top: 10vh;
+            height: 110vh;
+            width: 100%;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            .pantalon-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .p-principal {
+                grid-column: 1/4;
+                height: 65vh;
+                position: relative;
+                .pantalon-0{
+                    height: 63vh ;
+                    width: 22vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+                .PANTALON0{
+                    display: flex;
+                    position: absolute;
+                    margin-top:58vh;
+                    font-size: 130%;
+                }
+            }
+            .p-secundario{
+                height: 45vh;
+                margin-top: 3vh;
+                position: relative;
+                .pantalon-1{
+                    height: 43vh;
+                    width: 15vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+                .PANTALON1{
+                    display: flex;
+                    position: absolute;
+                    margin-top: 40vh;
+                    font-size: 130%;
+                }
+                .pantalon-2{
+                    height: 43vh;
+                    width: 15vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+                .pantalon-3{
+                    height: 43vh;
+                    width: 15vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+        .bermudas {
+            margin-top: 10vh;
+            height: 110vh;
+            width: 100%;
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: repeat(3,  1fr);
+            .bermudas-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .b-principal {
+                grid-column: 1/4;
+                height: 65vh;
+                position: relative;
+                .bermuda-0{
+                    height: 63vh ;
+                    width: 22vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+                .BERMUDA0{
+                    display: flex;
+                    position: absolute;
+                    margin-top:58vh;
+                    font-size: 130%;
+                }
+            }
+            .b-secundario{
+                height: 45vh;
+                margin-top: 3vh;
+                position: relative;
+                .bermuda-1{
+                    height: 43vh;
+                    width: 15vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+                .BERMUDA1{
+                    display: flex;
+                    position: absolute;
+                    margin-top: 40vh;
+                    font-size: 130%;
+                }
+                .bermuda-2{
+                    height: 43vh;
+                    width: 15vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+                .bermuda-3{
+                    height: 43vh;
+                    width: 15vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+        .accesorios {
+            margin-top: 10vh;
+            height: 110vh;
+            width: 100%;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns:repeat(3, 1fr);
+            .accesorio-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .a-principal {
+                grid-column: 1/4;
+                height: 65vh;
+                position: relative;
+                .accesorio-0{
+                    height: 63vh ;
+                    width: 22vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+                .ACCESORIO0{
+                    display: flex;
+                    position: absolute;
+                    margin-top:58vh;
+                    font-size: 130%;
+                }
+            }
+            .a-secundario{
+                height: 45vh;
+                margin-top: 3vh;
+                position: relative;
+                .accesorio-1{
+                    height: 43vh;
+                    width: 15vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+                .ACCESORIO1{
+                    display: flex;
+                    position: absolute;
+                    margin-top: 40vh;
+                    font-size: 130%;
+                }
+                .accesorio-2{
+                    height: 43vh;
+                    width: 15vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+                .accesorio-3{
+                    height: 43vh;
+                    width: 15vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                    -webkit-transition: 0.3s;
+                    &:hover{
+                        scale: 103%;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}
+.container-flow{
+    .text-footer{
+        margin-left: 9vw;
+    }
+}

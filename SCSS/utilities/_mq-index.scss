@@ -1,0 +1,162 @@
+@mixin notebook{
+    @media screen and (max-width: 1200px){
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width: 1024px){
+        @content;
+    }
+}
+@mixin mobile{
+    @media screen and (max-width: 768px ){
+        @content;
+    }
+}
+@mixin s-mobile{
+    @media screen and (max-width: 480px ){
+        @content;
+    }
+}
+@mixin vs-mobile{
+    @media screen and (max-width: 320px ){
+        @content;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width: 1024px){
+//     .header-main{
+//         .header-index {
+//             .nav-index {
+//                 width: 25%;
+//                 margin-left: 4vw;
+//                 height: 85%;
+//                 .logo-index {
+//                     h1 {
+//                         font-size: 8vw;
+//                     }
+//                 }
+//                 .menu-index {
+//                     margin-left: 0px ;
+//                     margin-top: 7vh;
+//                     gap: 2vh;
+//                     width: 20vw;
+//                     p {
+//                         font-size: 65%;
+//                     }
+//                 }
+//             }
+//             .box-buscador-index {
+//                 margin-left: 30%;
+//                 .buscador-index {
+//                     width: 35vw;
+//                     margin-top: 7vh;
+//                     p {
+//                         font-size: 60%;
+//                         margin-top: 1.8vh;
+//                     } 
+                
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media screen and (max-width: 768px) {
+//     .header-main {
+//         background-image: url(../img/imagen\ index.webp);
+//         height: 100%;
+//         max-width: 100%;
+//         background-attachment: fixed;
+//         background-position: 60%;
+//         background-size:cover;
+//         .header-index {
+//             display: block;
+//             max-width: 100vw;
+//             margin-top: 0;
+//             .nav-index {
+//                 background: none;
+//                 width: 100vw;
+//                 margin-left: 0;
+//                 height: 25vh;
+//                 border-bottom: none;
+//                 border-left: none;
+//                 border-right: none;
+//                 .logo-index {
+//                     justify-content: start;
+//                     margin-left: 4vw;
+//                     margin-top: 3vh;
+//                     h1 {
+//                         font-size: 12vw;
+//                     }
+//                 }
+//                 .menu-index {
+//                     width: 30vw;
+//                 }
+//             }
+//             .box-buscador-index{
+//                 margin-left: 0;
+//                 display: flex;
+//                 justify-content: center;
+//                 .buscador-index { 
+//                     width: 94vw;
+//                     height: 3.9vh;
+//                     margin-top: 55vh;
+//                     p {
+//                         font-size: 60%;
+//                     } 
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media screen and (max-width: 535px) {
+//     .header-main {
+//         background-image: url(../img/imagen\ index.webp);
+//         height: 100%;
+//         max-width: 100%;
+//         background-attachment: fixed;
+//         background-position:79%;
+//         background-size:cover;
+//         .header-index {
+//             .nav-index{
+//                 .logo-index {
+//                     h1{
+//                     font-size: 15vw;
+//                     }
+//                 }
+//                 .menu-index {
+//                     width: 40vw;
+//                     margin-top: 5vh;
+                    
+//                 }
+//             }
+//             .box-buscador-index{
+//                 .buscador-index { 
+//                 width: 92vw;
+//                 height: 3.7vh;
+//                 margin-top: 55vh;
+//                 }
+//             }
+//         }
+//     }
+// }

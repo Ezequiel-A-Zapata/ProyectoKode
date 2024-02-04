@@ -1,0 +1,89 @@
+.main-buscador {
+    height: 360vh;
+    background-color: nth($list: $colores, $n:5 );
+    width: 100vw;
+    padding-top: 30vh;
+    .navbar {
+        margin-left: 27.8vw;
+        width: 71vw;                                    /*75vw*/
+        padding: 0;
+        border: solid nth($list: $colores, $n: 2) 1px;
+        border-right: none;
+        z-index: 0;
+        -webkit-transition: 0.7s;
+        box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+        &:hover {
+            width: 74vw;
+            margin-left: 24.8vw;
+            transition: 0.7s;
+        }
+        .container-fluid {
+            padding: 0;
+            .formulario-buscador {
+                width: 100%;
+                .form-control {
+                    border-radius: 0;
+                    height: 7vh;
+                    background-color: nth($list: $colores, $n: 4 );
+                    font-size: 80%;
+                    width: 92%;
+                    &:focus {
+                        background-color: nth($list: $colores, $n:4 );
+                        }
+                    }
+                    .btn {
+                        border-radius: 0;
+                        border-top: none;
+                        border-bottom: none;
+                        border-color: nth($list: $colores, $n:2 );
+                        background-color: nth($list: $colores, $n:1 ) ;
+                        width: 8%;
+                        font-size: 80%;
+                        color: nth($list: $colores, $n: 2);
+                        &:hover {
+                            background-color: nth($list: $colores, $n:3 ) ;
+                            color: nth($list: $colores, $n: 2);
+                        }
+                }
+            }
+        }
+    }
+    .box-inventario {
+        display: flex;
+        justify-content: end;
+        width:100%;
+        .inventario {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows:repeat(5, 1fr) ;
+            height: 300vh;
+            margin-top: 10vh;
+            width: 100%;
+            .borde {
+                // border: solid nth($list: $colores, $n:2 ) 1px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 55vh;
+                -webkit-transition: 0.3s;
+                &:hover{
+                    scale: 103%;
+                    transition: 0.3s;
+                }
+                .productos{
+                    height: 53vh;
+                    width: 18vw;
+                    box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
+                }
+                .mas{
+                    position: absolute;
+                    margin-top: 46vh;
+                    .adicional{
+                        font-size: 120%;
+                    }
+                }
+            }
+
+        }
+    }
+}
