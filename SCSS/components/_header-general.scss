@@ -11,7 +11,7 @@ body{
         box-shadow:1px 2px 10px 0px rgb(108, 108, 108);
         @include mobile {
             flex-direction: column;
-            height: 13vh;
+            height: 11vh;
         }
         .nav-general {
             display: flex;
@@ -40,6 +40,9 @@ body{
                 @include mobile {
                     height: 37vh;
                 }
+                @include vs-mobile{
+                    height:35vh;
+                }
             }
             &:hover .menu-general{
                 opacity: 100%;
@@ -56,7 +59,8 @@ body{
                 height: 24vh;
             }
             @include mobile {
-                width: 35%;
+                width: 33%;
+                height: 34vw;
             }
             .logo-general {
                 text-decoration: none;
@@ -91,11 +95,17 @@ body{
                 color: nth($list: $colores, $n:2 );
                 margin-bottom: 0;
                 @include notebook {
-                    margin-top: 4vh;
+                    margin-top: 1vw;
                     margin-bottom: 0;
                 }
                 @include tablet{
-                    margin-top: 2vh;
+                    margin-top: 1vw;
+                }
+                @include mobile{
+                    margin-top: 8vw;
+                }
+                @include vs-mobile{
+                    margin-top: 6.5vw;
                 }
             }
             .menu-general {
@@ -148,7 +158,7 @@ body{
                     margin-left: 30%;
                 }
                 @include mobile {
-                    margin-top: 80vh;
+                    margin-top: 75vh;
                     margin-left: 2vw;
                     width: 94vw;
                     position: fixed;
