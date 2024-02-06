@@ -13,6 +13,9 @@ body {
   position: relative;
 }
 
+body {
+  max-width: 100%;
+}
 body .header-general {
   display: flex;
   height: 20vh;
@@ -23,6 +26,11 @@ body .header-general {
   background-size: cover;
   z-index: 1;
   box-shadow: 1px 2px 10px 0px rgb(108, 108, 108);
+}
+@media screen and (max-width: 1200px) {
+  body .header-general {
+    height: 17vh;
+  }
 }
 @media screen and (max-width: 480px) {
   body .header-general {
@@ -48,7 +56,7 @@ body .header-general .nav-general {
 @media screen and (max-width: 1200px) {
   body .header-general .nav-general {
     width: 22%;
-    height: 24vh;
+    height: 22vh;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -60,7 +68,7 @@ body .header-general .nav-general {
 @media screen and (max-width: 768px) {
   body .header-general .nav-general {
     width: 27%;
-    height: 27vh;
+    height: 29vh;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1175,7 +1183,24 @@ body .buscador-general p {
   max-width: 100vw;
   padding-top: 30vh;
 }
+@media screen and (max-width: 1200px) {
+  .main-buscador {
+    padding-top: 25vh;
+    height: 330vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main-buscador {
+    padding-top: 27vh;
+  }
+}
 @media screen and (max-width: 768px) {
+  .main-buscador {
+    padding-top: 12vh;
+    height: 710vh;
+  }
+}
+@media screen and (max-width: 480px) {
   .main-buscador {
     padding-top: 14vh;
     height: 1330vh;
@@ -1192,6 +1217,12 @@ body .buscador-general p {
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
 }
 @media screen and (max-width: 768px) {
+  .main-buscador .navbar {
+    margin-top: 18vh;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 480px) {
   .main-buscador .navbar {
     display: flex;
     flex-direction: column;
@@ -1211,6 +1242,8 @@ body .buscador-general p {
 }
 .main-buscador .navbar .container-fluid .formulario-buscador {
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 .main-buscador .navbar .container-fluid .formulario-buscador .form-control {
   border-radius: 0;
@@ -1218,6 +1251,11 @@ body .buscador-general p {
   background-color: white;
   font-size: 80%;
   width: 92%;
+}
+@media screen and (max-width: 1200px) {
+  .main-buscador .navbar .container-fluid .formulario-buscador .form-control {
+    height: 6vh;
+  }
 }
 @media screen and (max-width: 768px) {
   .main-buscador .navbar .container-fluid .formulario-buscador .form-control {
@@ -1234,9 +1272,14 @@ body .buscador-general p {
   border-bottom: none;
   border-color: rgb(71, 71, 71);
   background-color: beige;
-  width: 8%;
+  width: 10%;
   font-size: 80%;
   color: rgb(71, 71, 71);
+}
+@media screen and (max-width: 1200px) {
+  .main-buscador .navbar .container-fluid .formulario-buscador .btn {
+    width: 12%;
+  }
 }
 @media screen and (max-width: 768px) {
   .main-buscador .navbar .container-fluid .formulario-buscador .btn {
@@ -1261,6 +1304,17 @@ body .buscador-general p {
   margin-top: 10vh;
   width: 100%;
 }
+@media screen and (max-width: 1200px) {
+  .main-buscador .box-inventario .inventario {
+    height: 280vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-buscador .box-inventario .inventario {
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(10, 1fr);
+  }
+}
 @media screen and (max-width: 480px) {
   .main-buscador .box-inventario .inventario {
     grid-template-columns: 100vw;
@@ -1274,6 +1328,11 @@ body .buscador-general p {
   align-items: center;
   height: 55vh;
   -webkit-transition: 0.3s;
+}
+@media screen and (max-width: 1200px) {
+  .main-buscador .box-inventario .inventario .borde {
+    height: 50vh;
+  }
 }
 @media screen and (max-width: 768px) {
   .main-buscador .box-inventario .inventario .borde {
@@ -1289,7 +1348,19 @@ body .buscador-general p {
   width: 18vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
 }
+@media screen and (max-width: 1200px) {
+  .main-buscador .box-inventario .inventario .borde .productos {
+    height: 46vh;
+    width: 21vw;
+  }
+}
 @media screen and (max-width: 768px) {
+  .main-buscador .box-inventario .inventario .borde .productos {
+    height: 58vh;
+    width: 28vw;
+  }
+}
+@media screen and (max-width: 480px) {
   .main-buscador .box-inventario .inventario .borde .productos {
     height: 58vh;
     width: 83vw;
@@ -1298,6 +1369,11 @@ body .buscador-general p {
 .main-buscador .box-inventario .inventario .borde .mas {
   position: absolute;
   margin-top: 46vh;
+}
+@media screen and (max-width: 1200px) {
+  .main-buscador .box-inventario .inventario .borde .mas {
+    margin-top: 41vh;
+  }
 }
 @media screen and (max-width: 768px) {
   .main-buscador .box-inventario .inventario .borde .mas {
@@ -1320,6 +1396,11 @@ body .buscador-general p {
   margin: 0;
   height: 80vh;
   box-shadow: 0px 2px 10px 0px rgb(108, 108, 108);
+}
+@media screen and (max-width: 1200px) {
+  .container-flow {
+    height: 83vh;
+  }
 }
 @media screen and (max-width: 480px) {
   .container-flow {
