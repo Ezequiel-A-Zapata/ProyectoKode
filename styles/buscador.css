@@ -20,17 +20,7 @@
     background-size: cover;
     z-index: 1;
 }
-.nav-general {
-    background-color: beige;
-    z-index: 1;
-    width: 20%;
-    align-items: center;
-    margin-left: 3vw;
-    height: 45vh;
-    border-bottom: solid rgb(71, 71, 71) 0.1vh;
-    border-left: solid rgb(71, 71, 71) 0.1vh;
-    border-right: solid rgb(71, 71, 71) 0.1vh;
-}
+
 .nav-general:hover {
     background-color: rgb(173, 173, 152);
 }

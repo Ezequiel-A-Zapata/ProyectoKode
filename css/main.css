@@ -759,14 +759,31 @@ body .buscador-general p {
   transition: 0.3s;
 }
 
-.main-coleccion {
+body {
+  max-width: 100%;
+}
+body .main-coleccion {
   height: 630vh;
   background-color: rgb(241, 228, 208);
   display: flex;
   justify-content: space-between;
   z-index: 1;
 }
-.main-coleccion .box-clasificacion {
+@media screen and (max-width: 768px) {
+  body .main-coleccion {
+    justify-content: center;
+    height: 1500vh;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .main-coleccion {
+    justify-content: center;
+    height: 1455vh;
+    margin-left: 0;
+  }
+}
+body .main-coleccion .box-clasificacion {
   margin-top: 23%;
   margin-left: 3vw;
   width: 17%;
@@ -777,7 +794,23 @@ body .buscador-general p {
   position: fixed;
   box-shadow: 0px 2px 10px 0px rgb(108, 108, 108);
 }
-.main-coleccion .box-clasificacion .clasificacion {
+@media screen and (max-width: 768px) {
+  body .main-coleccion .box-clasificacion {
+    margin-top: 18%;
+    margin-left: 78%;
+    margin-right: 2vw;
+    height: 31vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .main-coleccion .box-clasificacion {
+    margin-top: 18%;
+    margin-left: 78%;
+    margin-right: 2vw;
+    height: 31vh;
+  }
+}
+body .main-coleccion .clasificacion {
   list-style-type: none;
   font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
   display: flex;
@@ -789,13 +822,40 @@ body .buscador-general p {
   gap: 5vh;
   margin-left: 2vw;
 }
-.main-coleccion .box-coleccion {
+@media screen and (max-width: 768px) {
+  body .main-coleccion .clasificacion {
+    gap: 6vw;
+    font-size: 54%;
+    margin-left: 1.2vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .main-coleccion .clasificacion {
+    gap: 6vw;
+    font-size: 54%;
+    margin-left: 1.2vw;
+  }
+}
+body .box-coleccion {
   width: 75%;
   height: 375vh;
   margin-top: 23vh;
   margin-left: 25vw;
+  z-index: 0;
 }
-.main-coleccion .box-coleccion .remeras {
+@media screen and (max-width: 768px) {
+  body .box-coleccion {
+    margin-left: 25vw;
+    margin-top: 22vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion {
+    margin-left: 0;
+    margin-top: 16vh;
+  }
+}
+body .box-coleccion .remeras {
   height: 113vh;
   width: 100%;
   display: grid;
@@ -803,77 +863,169 @@ body .buscador-general p {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
 }
-.main-coleccion .box-coleccion .remeras .remera-item {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .remeras {
+    height: 300vh;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 50vw);
+    justify-content: start;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .remeras {
+    justify-content: center;
+    height: 290vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+body .box-coleccion .remeras .remera-item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main-coleccion .box-coleccion .remeras .r-principal {
+body .box-coleccion .remeras .r-principal {
   grid-column: 1/4;
   height: 65vh;
 }
-.main-coleccion .box-coleccion .remeras .r-principal .remera-0 {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .remeras .r-principal {
+    width: 50vw;
+    height: 68vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .remeras .r-principal {
+    width: 100vw;
+    height: 67vh;
+  }
+}
+body .box-coleccion .remeras .r-principal .remera-0 {
   height: 63vh;
   width: 22vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .remeras .r-principal .remera-0:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .remeras .r-principal .remera-0 {
+    width: 42vw;
+    height: 68vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .remeras .r-principal .remera-0 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .remeras .r-principal .remera-0:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .remeras .r-principal .remera-0:hover .REMERA0 {
+body .box-coleccion .remeras .r-principal .remera-0:hover .REMERA0 {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .remeras .r-principal .REMERA0 {
+body .box-coleccion .remeras .r-principal .REMERA0 {
   display: flex;
   position: absolute;
   margin-top: 58vh;
   font-size: 130%;
 }
-.main-coleccion .box-coleccion .remeras .r-secundario {
+body .box-coleccion .remeras .r-secundario {
   height: 45vh;
   margin-top: 3vh;
   position: relative;
 }
-.main-coleccion .box-coleccion .remeras .r-secundario .remera-1 {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .remeras .r-secundario {
+    margin-top: 0vh;
+    grid-column: 1/2;
+    width: 50vw;
+    height: 68vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .remeras .r-secundario {
+    margin-top: 0vh;
+    grid-column: 1/4;
+    width: 100vw;
+    height: 67vh;
+  }
+}
+body .box-coleccion .remeras .r-secundario .remera-1 {
   height: 43vh;
   width: 15vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .remeras .r-secundario .remera-1:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .remeras .r-secundario .remera-1 {
+    width: 42vw;
+    height: 68vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .remeras .r-secundario .remera-1 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .remeras .r-secundario .remera-1:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .remeras .r-secundario .REMERA1 {
+body .box-coleccion .remeras .r-secundario .REMERA1 {
   display: flex;
   position: absolute;
   margin-top: 40vh;
   font-size: 130%;
 }
-.main-coleccion .box-coleccion .remeras .r-secundario .remera-2 {
+body .box-coleccion .remeras .r-secundario .remera-2 {
   height: 43vh;
   width: 15vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .remeras .r-secundario .remera-2:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .remeras .r-secundario .remera-2 {
+    width: 42vw;
+    height: 68vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .remeras .r-secundario .remera-2 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .remeras .r-secundario .remera-2:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .remeras .r-secundario .remera-3 {
+body .box-coleccion .remeras .r-secundario .remera-3 {
   height: 43vh;
   width: 15vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .remeras .r-secundario .remera-3:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .remeras .r-secundario .remera-3 {
+    width: 42vw;
+    height: 68vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .remeras .r-secundario .remera-3 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .remeras .r-secundario .remera-3:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .camisas {
+body .box-coleccion .camisas {
   margin-top: 10vh;
   height: 110vh;
   width: 100%;
@@ -881,73 +1033,167 @@ body .buscador-general p {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
-.main-coleccion .box-coleccion .camisas .camisa-item {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .camisas {
+    justify-content: center;
+    height: 290vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .camisas {
+    justify-content: center;
+    height: 290vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
+body .box-coleccion .camisas .camisa-item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main-coleccion .box-coleccion .camisas .c-principal {
+body .box-coleccion .camisas .c-principal {
   grid-column: 1/4;
   height: 65vh;
 }
-.main-coleccion .box-coleccion .camisas .c-principal .camisa-0 {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .camisas .c-principal {
+    width: 100vw;
+    height: 67vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .camisas .c-principal {
+    width: 100vw;
+    height: 67vh;
+  }
+}
+body .box-coleccion .camisas .c-principal .camisa-0 {
   height: 63vh;
   width: 22vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .camisas .c-principal .camisa-0:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .camisas .c-principal .camisa-0 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .camisas .c-principal .camisa-0 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .camisas .c-principal .camisa-0:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .camisas .c-principal .CAMISA0 {
+body .box-coleccion .camisas .c-principal .CAMISA0 {
   display: flex;
   position: absolute;
   margin-top: 58vh;
   font-size: 130%;
 }
-.main-coleccion .box-coleccion .camisas .c-secundario {
+body .box-coleccion .camisas .c-secundario {
   height: 45vh;
   margin-top: 3vh;
   position: relative;
 }
-.main-coleccion .box-coleccion .camisas .c-secundario .camisa-1 {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .camisas .c-secundario {
+    grid-column: 1/4;
+    width: 100vw;
+    height: 67vh;
+    margin-top: 0vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .camisas .c-secundario {
+    grid-column: 1/4;
+    width: 100vw;
+    height: 67vh;
+    margin-top: 0vh;
+  }
+}
+body .box-coleccion .camisas .c-secundario .camisa-1 {
   height: 43vh;
   width: 15vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .camisas .c-secundario .camisa-1:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .camisas .c-secundario .camisa-1 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .camisas .c-secundario .camisa-1 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .camisas .c-secundario .camisa-1:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .camisas .c-secundario .CAMISA1 {
+body .box-coleccion .camisas .c-secundario .CAMISA1 {
   display: flex;
   position: absolute;
   margin-top: 40vh;
   font-size: 130%;
 }
-.main-coleccion .box-coleccion .camisas .c-secundario .camisa-2 {
+body .box-coleccion .camisas .c-secundario .camisa-2 {
   height: 43vh;
   width: 15vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .camisas .c-secundario .camisa-2:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .camisas .c-secundario .camisa-2 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .camisas .c-secundario .camisa-2 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .camisas .c-secundario .camisa-2:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .camisas .c-secundario .camisa-3 {
+body .box-coleccion .camisas .c-secundario .camisa-3 {
   height: 43vh;
   width: 15vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .camisas .c-secundario .camisa-3:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .camisas .c-secundario .camisa-3 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .camisas .c-secundario .camisa-3 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .camisas .c-secundario .camisa-3:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .pantalones {
+body .box-coleccion .pantalones {
   margin-top: 10vh;
   height: 110vh;
   width: 100%;
@@ -955,74 +1201,168 @@ body .buscador-general p {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
-.main-coleccion .box-coleccion .pantalones .pantalon-item {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .pantalones {
+    justify-content: center;
+    height: 290vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .pantalones {
+    justify-content: center;
+    height: 290vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
+body .box-coleccion .pantalones .pantalon-item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main-coleccion .box-coleccion .pantalones .p-principal {
+body .box-coleccion .pantalones .p-principal {
   grid-column: 1/4;
   height: 65vh;
   position: relative;
 }
-.main-coleccion .box-coleccion .pantalones .p-principal .pantalon-0 {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .pantalones .p-principal {
+    width: 100vw;
+    height: 67vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .pantalones .p-principal {
+    width: 100vw;
+    height: 67vh;
+  }
+}
+body .box-coleccion .pantalones .p-principal .pantalon-0 {
   height: 63vh;
   width: 22vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .pantalones .p-principal .pantalon-0:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .pantalones .p-principal .pantalon-0 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .pantalones .p-principal .pantalon-0 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .pantalones .p-principal .pantalon-0:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .pantalones .p-principal .PANTALON0 {
+body .box-coleccion .pantalones .p-principal .PANTALON0 {
   display: flex;
   position: absolute;
   margin-top: 58vh;
   font-size: 130%;
 }
-.main-coleccion .box-coleccion .pantalones .p-secundario {
+body .box-coleccion .pantalones .p-secundario {
   height: 45vh;
   margin-top: 3vh;
   position: relative;
 }
-.main-coleccion .box-coleccion .pantalones .p-secundario .pantalon-1 {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .pantalones .p-secundario {
+    grid-column: 1/4;
+    margin-top: 0vh;
+    width: 100vw;
+    height: 67vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .pantalones .p-secundario {
+    grid-column: 1/4;
+    margin-top: 0vh;
+    width: 100vw;
+    height: 67vh;
+  }
+}
+body .box-coleccion .pantalones .p-secundario .pantalon-1 {
   height: 43vh;
   width: 15vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .pantalones .p-secundario .pantalon-1:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .pantalones .p-secundario .pantalon-1 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .pantalones .p-secundario .pantalon-1 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .pantalones .p-secundario .pantalon-1:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .pantalones .p-secundario .PANTALON1 {
+body .box-coleccion .pantalones .p-secundario .PANTALON1 {
   display: flex;
   position: absolute;
   margin-top: 40vh;
   font-size: 130%;
 }
-.main-coleccion .box-coleccion .pantalones .p-secundario .pantalon-2 {
+body .box-coleccion .pantalones .p-secundario .pantalon-2 {
   height: 43vh;
   width: 15vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .pantalones .p-secundario .pantalon-2:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .pantalones .p-secundario .pantalon-2 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .pantalones .p-secundario .pantalon-2 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .pantalones .p-secundario .pantalon-2:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .pantalones .p-secundario .pantalon-3 {
+body .box-coleccion .pantalones .p-secundario .pantalon-3 {
   height: 43vh;
   width: 15vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .pantalones .p-secundario .pantalon-3:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .pantalones .p-secundario .pantalon-3 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .pantalones .p-secundario .pantalon-3 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .pantalones .p-secundario .pantalon-3:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .bermudas {
+body .box-coleccion .bermudas {
   margin-top: 10vh;
   height: 110vh;
   width: 100%;
@@ -1030,74 +1370,168 @@ body .buscador-general p {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
-.main-coleccion .box-coleccion .bermudas .bermudas-item {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .bermudas {
+    justify-content: center;
+    height: 279vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .bermudas {
+    justify-content: center;
+    height: 279vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
+body .box-coleccion .bermudas .bermudas-item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main-coleccion .box-coleccion .bermudas .b-principal {
+body .box-coleccion .bermudas .b-principal {
   grid-column: 1/4;
   height: 65vh;
   position: relative;
 }
-.main-coleccion .box-coleccion .bermudas .b-principal .bermuda-0 {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .bermudas .b-principal {
+    width: 100vw;
+    height: 67vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .bermudas .b-principal {
+    width: 100vw;
+    height: 67vh;
+  }
+}
+body .box-coleccion .bermudas .b-principal .bermuda-0 {
   height: 63vh;
   width: 22vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .bermudas .b-principal .bermuda-0:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .bermudas .b-principal .bermuda-0 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .bermudas .b-principal .bermuda-0 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .bermudas .b-principal .bermuda-0:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .bermudas .b-principal .BERMUDA0 {
+body .box-coleccion .bermudas .b-principal .BERMUDA0 {
   display: flex;
   position: absolute;
   margin-top: 58vh;
   font-size: 130%;
 }
-.main-coleccion .box-coleccion .bermudas .b-secundario {
+body .box-coleccion .bermudas .b-secundario {
   height: 45vh;
   margin-top: 3vh;
   position: relative;
 }
-.main-coleccion .box-coleccion .bermudas .b-secundario .bermuda-1 {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .bermudas .b-secundario {
+    grid-column: 1/4;
+    margin-top: 0vh;
+    width: 100vw;
+    height: 67vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .bermudas .b-secundario {
+    grid-column: 1/4;
+    margin-top: 0vh;
+    width: 100vw;
+    height: 67vh;
+  }
+}
+body .box-coleccion .bermudas .b-secundario .bermuda-1 {
   height: 43vh;
   width: 15vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .bermudas .b-secundario .bermuda-1:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .bermudas .b-secundario .bermuda-1 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .bermudas .b-secundario .bermuda-1 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .bermudas .b-secundario .bermuda-1:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .bermudas .b-secundario .BERMUDA1 {
+body .box-coleccion .bermudas .b-secundario .BERMUDA1 {
   display: flex;
   position: absolute;
   margin-top: 40vh;
   font-size: 130%;
 }
-.main-coleccion .box-coleccion .bermudas .b-secundario .bermuda-2 {
+body .box-coleccion .bermudas .b-secundario .bermuda-2 {
   height: 43vh;
   width: 15vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .bermudas .b-secundario .bermuda-2:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .bermudas .b-secundario .bermuda-2 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .bermudas .b-secundario .bermuda-2 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .bermudas .b-secundario .bermuda-2:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .bermudas .b-secundario .bermuda-3 {
+body .box-coleccion .bermudas .b-secundario .bermuda-3 {
   height: 43vh;
   width: 15vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .bermudas .b-secundario .bermuda-3:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .bermudas .b-secundario .bermuda-3 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .bermudas .b-secundario .bermuda-3 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .bermudas .b-secundario .bermuda-3:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .accesorios {
+body .box-coleccion .accesorios {
   margin-top: 10vh;
   height: 110vh;
   width: 100%;
@@ -1105,70 +1539,166 @@ body .buscador-general p {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
-.main-coleccion .box-coleccion .accesorios .accesorio-item {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .accesorios {
+    margin-top: 0;
+    justify-content: center;
+    height: 290vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .accesorios {
+    margin-top: 0;
+    justify-content: center;
+    height: 290vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
+body .box-coleccion .accesorios .accesorio-item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main-coleccion .box-coleccion .accesorios .a-principal {
+body .box-coleccion .accesorios .a-principal {
   grid-column: 1/4;
   height: 65vh;
   position: relative;
 }
-.main-coleccion .box-coleccion .accesorios .a-principal .accesorio-0 {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .accesorios .a-principal {
+    width: 100vw;
+    height: 67vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .accesorios .a-principal {
+    width: 100vw;
+    height: 67vh;
+  }
+}
+body .box-coleccion .accesorios .a-principal .accesorio-0 {
   height: 63vh;
   width: 22vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .accesorios .a-principal .accesorio-0:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .accesorios .a-principal .accesorio-0 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .accesorios .a-principal .accesorio-0 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .accesorios .a-principal .accesorio-0:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .accesorios .a-principal .ACCESORIO0 {
+body .box-coleccion .accesorios .a-principal .ACCESORIO0 {
   display: flex;
   position: absolute;
   margin-top: 58vh;
   font-size: 130%;
 }
-.main-coleccion .box-coleccion .accesorios .a-secundario {
+body .box-coleccion .accesorios .a-secundario {
   height: 45vh;
   margin-top: 3vh;
   position: relative;
 }
-.main-coleccion .box-coleccion .accesorios .a-secundario .accesorio-1 {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .accesorios .a-secundario {
+    grid-column: 1/4;
+    margin-top: 0vh;
+    width: 100vw;
+    height: 67vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .accesorios .a-secundario {
+    grid-column: 1/4;
+    margin-top: 0vh;
+    width: 100vw;
+    height: 67vh;
+  }
+}
+body .box-coleccion .accesorios .a-secundario .accesorio-1 {
   height: 43vh;
   width: 15vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .accesorios .a-secundario .accesorio-1:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .accesorios .a-secundario .accesorio-1 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .accesorios .a-secundario .accesorio-1 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .accesorios .a-secundario .accesorio-1:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .accesorios .a-secundario .ACCESORIO1 {
+body .box-coleccion .accesorios .a-secundario .ACCESORIO1 {
   display: flex;
   position: absolute;
   margin-top: 40vh;
   font-size: 130%;
 }
-.main-coleccion .box-coleccion .accesorios .a-secundario .accesorio-2 {
+body .box-coleccion .accesorios .a-secundario .accesorio-2 {
   height: 43vh;
   width: 15vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .accesorios .a-secundario .accesorio-2:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .accesorios .a-secundario .accesorio-2 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .accesorios .a-secundario .accesorio-2 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .accesorios .a-secundario .accesorio-2:hover {
   scale: 103%;
   transition: 0.3s;
 }
-.main-coleccion .box-coleccion .accesorios .a-secundario .accesorio-3 {
+body .box-coleccion .accesorios .a-secundario .accesorio-3 {
   height: 43vh;
   width: 15vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
-.main-coleccion .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
+@media screen and (max-width: 768px) {
+  body .box-coleccion .accesorios .a-secundario .accesorio-3 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .accesorios .a-secundario .accesorio-3 {
+    width: 70vw;
+    height: 60vh;
+  }
+}
+body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
   scale: 103%;
   transition: 0.3s;
 }
@@ -1180,7 +1710,6 @@ body .buscador-general p {
 .main-buscador {
   height: 360vh;
   background-color: rgb(241, 228, 208);
-  max-width: 100vw;
   padding-top: 30vh;
 }
 @media screen and (max-width: 1200px) {
@@ -1436,7 +1965,7 @@ body .buscador-general p {
 }
 @media screen and (max-width: 480px) {
   .container-flow .row h2 {
-    font-size: 120%;
+    font-size: 160%;
     margin-top: 32vh;
     height: 15vh;
   }
