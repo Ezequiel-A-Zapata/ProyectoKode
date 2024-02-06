@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include mobile {
+    @include s-mobile {
         justify-content: start;
         align-items: start;
     }
@@ -13,6 +13,9 @@
         margin-top: 20vh;
         width: 35vw;
         @include mobile{
+            margin-top: 12vh;
+        }
+        @include s-mobile{
             margin-top: 24vh;
             margin-left: 10vw;
             width: 80vw;;
@@ -47,6 +50,9 @@
                     font-size: 68%;
                     margin-left: 3%;
                     @include mobile {
+                        font-size: 65%;
+                    }
+                    @include s-mobile {
                         font-size: 61%;
                     }
                 }
@@ -94,7 +100,10 @@
                 height: 4vh;
                 border-radius: none;
                 -webkit-transition: 0.7s;
-                @include mobile {
+                @include mobile{
+                    font-size: 60%;
+                }
+                @include s-mobile {
                     font-size: 65%;
                     height: 3.5vh;
                     margin-top: 7vh;
