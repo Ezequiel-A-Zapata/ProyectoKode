@@ -7,6 +7,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    @include s-mobile{
+        background-image: url(../img/imagen\ index\ mobile.webp);
+    }
     .header-general {
         display:flex;
         height: 27vh;                               
