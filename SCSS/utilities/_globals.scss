@@ -3,7 +3,8 @@
     font-family:"fuente-logo";
     src: url(../fuentes/DMSerifDisplay-Italic.ttf);
 }
-body {
+html {
     max-width: 100%;
     position: relative;
+    overflow-x: hidden;
 }

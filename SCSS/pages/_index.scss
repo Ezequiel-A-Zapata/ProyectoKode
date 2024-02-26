@@ -1,17 +1,14 @@
-
+body{
+    overflow-x: hidden;
 .header-main {
     background-image: url(../img/imagen\ index.webp);
     height: 100%;
+    width: 100%;
     max-width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    @include s-mobile{
-    background-image: url(../img/imagen-index-mobile.png);
-        background-size:cover;
-        background-position:-160vw;
-    }
     .header-general {
         display:flex;
         height: 27vh;                               
@@ -29,5 +26,8 @@
         .main-index {
             height: 100vh;
             opacity: 0;
+            .contenedor-frase{
+            }
         }
     }
+}

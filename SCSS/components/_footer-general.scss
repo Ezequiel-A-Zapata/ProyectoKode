@@ -19,12 +19,12 @@
         @include s-mobile{
             height: 0;
         }
-        h2 {
+        .col-12 {
             font-family:"fuente-logo";
             font-weight: 100;
             font-size: 160%;
             color: rgb(50, 50, 50);
-            margin-top: 35vh;
+            margin-top: 25vh;
             @include tablet{
                 margin-top: 30vh;
             }
@@ -38,7 +38,7 @@
             }
         }
         .redes {
-            padding-top:11vh;
+            padding-top:0vh;
             font-family:"Neue-Helvetica","Helvetica","Arial","sans-serif";
             font-size: 100%;
             @include s-mobile{
