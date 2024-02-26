@@ -8,7 +8,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     @include s-mobile{
-        background-image: url(../img/imagen\ index\ mobile.webp);
+    background-image: url(../img/imagen-index-mobile.png);
+        background-size:cover;
+        background-position:-160vw;
     }
     .header-general {
         display:flex;
