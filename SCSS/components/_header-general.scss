@@ -62,10 +62,17 @@ body{
                     height: 39vh;;
                 }
                 @include mobile {
+<<<<<<< HEAD
                     height:52vh;
                 }
                 @include s-mobile{
                     height: 30vh;
+=======
+                    height: 53vh;
+                }
+                @include s-mobile{
+                    height: 31vh;
+>>>>>>> rama-prueba
                 }
                 @include vs-mobile{
                     height:35vh;
@@ -146,18 +153,30 @@ body{
                     &:hover{
                         color: nth($list: $colores, $n:4 );
                         font-size: 75%;
+                        @include tablet{
+                            font-size: 70%;
+                        }
                     }
                     @include tablet{
                         font-size: 65%;
                     }
                     
                 }
+<<<<<<< HEAD
                 @include tablet {
                     margin-left: 0;
                 }
                 @include mobile {
                     width: 27vw;
                     margin-left: 6vw;
+=======
+                @include tablet{
+                    margin-left: 0vw;
+                }
+                @include mobile {
+                    width: 27vw;
+                    margin-left: 5vw;
+>>>>>>> rama-prueba
                 }
                 @include s-mobile{
                     margin-left: 0;
