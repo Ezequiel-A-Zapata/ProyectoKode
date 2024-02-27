@@ -1779,18 +1779,19 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
 @media screen and (max-width: 1024px) {
   .main-buscador {
     padding-top: 27vh;
+    height: 695vh;
   }
 }
 @media screen and (max-width: 768px) {
   .main-buscador {
     padding-top: 12vh;
-    height: 710vh;
+    height: 1160vh;
   }
 }
 @media screen and (max-width: 480px) {
   .main-buscador {
     padding-top: 14vh;
-    height: 1330vh;
+    height: 1350vh;
   }
 }
 .main-buscador .navbar {
@@ -1807,6 +1808,7 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
   .main-buscador .navbar {
     margin-top: 18vh;
     padding: 0;
+    z-index: 2;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1881,7 +1883,7 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
 .main-buscador .box-inventario {
   display: flex;
   justify-content: end;
-  width: 100%;
+  max-width: 100%;
 }
 .main-buscador .box-inventario .inventario {
   display: grid;
@@ -1896,6 +1898,13 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
     height: 280vh;
   }
 }
+@media screen and (max-width: 1024px) {
+  .main-buscador .box-inventario .inventario {
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(10, 1fr);
+    margin-top: 2vh;
+  }
+}
 @media screen and (max-width: 768px) {
   .main-buscador .box-inventario .inventario {
     grid-template-columns: repeat(2, 50vw);
@@ -1906,7 +1915,12 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
   .main-buscador .box-inventario .inventario {
     grid-template-columns: 100vw;
     grid-template-rows: repeat(20, 1fr);
-    margin-top: 5vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main-buscador .box-inventario .inventario {
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(20, 1fr);
   }
 }
 .main-buscador .box-inventario .inventario .borde {
@@ -1921,9 +1935,24 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
     height: 50vh;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .main-buscador .box-inventario .inventario .borde {
     height: 65vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-buscador .box-inventario .inventario .borde {
+    height: 110vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-buscador .box-inventario .inventario .borde {
+    height: 66vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main-buscador .box-inventario .inventario .borde {
+    height: 66vh;
   }
 }
 .main-buscador .box-inventario .inventario .borde:hover {
@@ -1931,26 +1960,22 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
   transition: 0.3s;
 }
 .main-buscador .box-inventario .inventario .borde .productos {
-  height: 53vh;
-  width: 18vw;
+  scale: 70%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
-}
-@media screen and (max-width: 1200px) {
-  .main-buscador .box-inventario .inventario .borde .productos {
-    height: 46vh;
-    width: 21vw;
-  }
 }
 @media screen and (max-width: 768px) {
   .main-buscador .box-inventario .inventario .borde .productos {
-    height: 58vh;
-    width: 28vw;
+    scale: 70%;
   }
 }
 @media screen and (max-width: 480px) {
   .main-buscador .box-inventario .inventario .borde .productos {
-    height: 58vh;
-    width: 83vw;
+    scale: 77%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main-buscador .box-inventario .inventario .borde .productos {
+    scale: 60%;
   }
 }
 .main-buscador .box-inventario .inventario .borde .mas {

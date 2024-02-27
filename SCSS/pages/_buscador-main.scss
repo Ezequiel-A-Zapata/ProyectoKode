@@ -9,14 +9,15 @@
     }
     @include tablet {
         padding-top: 27vh;
+        height: 695vh;
     }
     @include mobile {
         padding-top: 12vh;
-        height: 710vh;
+        height: 1160vh;
     }
     @include s-mobile {
         padding-top: 14vh;
-        height: 1330vh;
+        height: 1350vh;
     }
     .navbar {
         margin-left: 27.8vw;
@@ -30,6 +31,7 @@
         @include mobile{
             margin-top: 18vh;
             padding: 0;
+            z-index: 2;
         }
         @include s-mobile{
             display: flex;
@@ -94,7 +96,7 @@
     .box-inventario {
         display: flex;
         justify-content: end;
-        width:100%;
+        max-width:100%;
         .inventario {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -105,14 +107,22 @@
             @include notebook {
                 height: 280vh;
             }
+            @include tablet{
+                grid-template-columns:repeat(2, 50vw);
+                grid-template-rows: repeat(10, 1fr);
+                margin-top: 2vh;
+            }
             @include mobile {
                 grid-template-columns:repeat(2, 50vw);
                 grid-template-rows: repeat(10, 1fr);
             }
-            @include s-mobile{
+            @include s-mobile {
                 grid-template-columns: 100vw;
                 grid-template-rows: repeat(20, 1fr);
-                margin-top: 5vh;
+            }
+            @include vs-mobile{
+                grid-template-columns: 100vw;
+                grid-template-rows: repeat(20, 1fr);
             }
             .borde {
                 // border: solid nth($list: $colores, $n:2 ) 1px;
@@ -124,28 +134,43 @@
                 @include notebook{
                     height: 50vh;
                 }
-                @include mobile{
-                    height: 65vh;
+                @include tablet{
+                    height:65vh ;
+                }
+                @include mobile {
+                    height:110vh ;
+                }
+                @include s-mobile{
+                    height: 66vh;
+                }
+                @include vs-mobile{
+                    height: 66vh;
                 }
                 &:hover{
                     scale: 103%;
                     transition: 0.3s;
                 }
                 .productos{
-                    height: 53vh;
-                    width: 18vw;
+                    // height: 53vh;
+                    // width: 18vw;
+                    scale: 70%;
                     box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
                     @include notebook {
-                        height: 46vh;
-                        width: 21vw;
+                        // height: 46vh;
+                        // width: 21vw;
                     }
                     @include mobile{
-                        height: 58vh;
-                        width: 28vw;
+                        // height: 58vh;
+                        // width: 28vw;
+                        scale: 70%;
                     }
                     @include s-mobile{
-                        height: 58vh;
-                        width: 83vw;
+                        scale: 77%;
+                    }
+                    @include vs-mobile{
+                        // height: 58vh;
+                        // width: 83vw;
+                        scale: 60%;
                     }
                 }
                 .mas{
