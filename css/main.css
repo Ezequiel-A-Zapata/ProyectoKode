@@ -75,11 +75,13 @@ body .header-general .nav-general {
 @media screen and (max-width: 480px) {
   body .header-general .nav-general {
     height: 27vw;
+    width: 40%;
   }
 }
 @media screen and (max-width: 320px) {
   body .header-general .nav-general {
     height: 30vw;
+    width: 40%;
   }
 }
 body .header-general .nav-general:hover {
@@ -99,12 +101,12 @@ body .header-general .nav-general:hover {
 }
 @media screen and (max-width: 768px) {
   body .header-general .nav-general:hover {
-    height: 37vh;
+    height: 52vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .header-general .nav-general:hover {
-    height: 25vh;
+    height: 30vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -113,7 +115,6 @@ body .header-general .nav-general:hover {
   }
 }
 body .header-general .nav-general:hover .menu-general {
-  opacity: 100%;
   transition: 0.7s;
   display: flex;
 }
@@ -147,6 +148,11 @@ body .header-general .logo-general h1 {
     font-size: 9vw;
   }
 }
+@media screen and (max-width: 480px) {
+  body .header-general .logo-general h1 {
+    font-size: 13vw;
+  }
+}
 body .header-general .logo-general h1:hover {
   color: white;
   font-size: 7.3vw;
@@ -164,7 +170,6 @@ body .header-general .menu-general {
   display: none;
   flex-direction: column;
   justify-content: space-around;
-  opacity: 0%;
   height: 40%;
   width: 15vw;
   margin-top: 1vh;
@@ -188,9 +193,20 @@ body .header-general .menu-general p:hover {
     font-size: 65%;
   }
 }
+@media screen and (max-width: 1024px) {
+  body .header-general .menu-general {
+    margin-left: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   body .header-general .menu-general {
     width: 27vw;
+    margin-left: 6vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .header-general .menu-general {
+    margin-left: 0;
   }
 }
 body .box-buscador-general {
