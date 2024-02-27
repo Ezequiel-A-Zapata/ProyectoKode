@@ -45,9 +45,11 @@ body{
             }
             @include s-mobile{
                 height: 27vw;
+                width: 40%;
             }
             @include vs-mobile{
                 height: 30vw;
+                width: 40%;
             }
             &:hover {
                 background-color: nth($list: $colores, $n:3 );
@@ -60,17 +62,16 @@ body{
                     height: 39vh;;
                 }
                 @include mobile {
-                    height: 37vh;
+                    height: 53vh;
                 }
                 @include s-mobile{
-                    height: 25vh;
+                    height: 31vh;
                 }
                 @include vs-mobile{
                     height:35vh;
                 }
             }
             &:hover .menu-general{
-                opacity: 100%;
                 transition: 0.7s;
                 display: flex;
             }
@@ -96,6 +97,9 @@ body{
                     }
                     @include mobile {
                         font-size: 9vw;
+                    }
+                    @include s-mobile{
+                        font-size: 13vw;
                     }
                     &:hover { 
                         color: nth($list: $colores, $n:4 );
@@ -127,7 +131,6 @@ body{
                 display: none;
                 flex-direction: column;
                 justify-content: space-around;
-                opacity: 0%;
                 height: 40%;
                 width: 15vw;
                 margin-top: 1vh;
@@ -143,14 +146,24 @@ body{
                     &:hover{
                         color: nth($list: $colores, $n:4 );
                         font-size: 75%;
+                        @include tablet{
+                            font-size: 70%;
+                        }
                     }
                     @include tablet{
                         font-size: 65%;
                     }
                     
                 }
+                @include tablet{
+                    margin-left: 0vw;
+                }
                 @include mobile {
                     width: 27vw;
+                    margin-left: 5vw;
+                }
+                @include s-mobile{
+                    margin-left: 0;
                 }
             }
         }
