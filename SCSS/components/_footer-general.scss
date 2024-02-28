@@ -19,7 +19,7 @@
         @include s-mobile{
             height: 0;
         }
-        .col-12 {
+        .titulo-footer {
             font-family:"fuente-logo";
             font-weight: 100;
             font-size: 160%;
@@ -38,7 +38,7 @@
             }
         }
         .redes {
-            padding-top:0vh;
+            padding-top:20vh;
             font-family:"Neue-Helvetica","Helvetica","Arial","sans-serif";
             font-size: 100%;
             @include s-mobile{

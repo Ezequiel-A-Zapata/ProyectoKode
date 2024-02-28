@@ -789,17 +789,22 @@ body {
   max-width: 100%;
 }
 body .main-coleccion {
-  height: 630vh;
+  height: 665vh;
   background-color: rgb(241, 228, 208);
   display: flex;
   justify-content: space-between;
   z-index: 1;
   max-width: 100vw;
 }
+@media screen and (max-width: 1024px) {
+  body .main-coleccion {
+    height: 1650vh;
+    margin-left: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   body .main-coleccion {
-    justify-content: center;
-    height: 1500vh;
+    height: 1920vh;
     margin-left: 0;
   }
 }
@@ -830,14 +835,6 @@ body .main-coleccion .box-clasificacion p {
 @media screen and (max-width: 480px) {
   body .main-coleccion .box-clasificacion p {
     opacity: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
-  body .main-coleccion .box-clasificacion {
-    margin-top: 18%;
-    margin-left: 78%;
-    margin-right: 2vw;
-    height: 31vh;
   }
 }
 @media screen and (max-width: 480px) {
@@ -874,13 +871,6 @@ body .main-coleccion .clasificacion {
   gap: 5vh;
   margin-left: 2vw;
 }
-@media screen and (max-width: 768px) {
-  body .main-coleccion .clasificacion {
-    gap: 6vw;
-    font-size: 54%;
-    margin-left: 1.2vw;
-  }
-}
 @media screen and (max-width: 480px) {
   body .main-coleccion .clasificacion {
     gap: 4vw;
@@ -897,20 +887,26 @@ body .main-coleccion .clasificacion {
 body .box-coleccion {
   width: 75%;
   height: 375vh;
-  margin-top: 23vh;
+  margin-top: 28vh;
   margin-left: 25vw;
   z-index: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .box-coleccion {
     margin-left: 25vw;
     margin-top: 22vh;
   }
 }
+@media screen and (max-width: 768px) {
+  body .box-coleccion {
+    margin-left: 25vw;
+    margin-top: 25vh;
+  }
+}
 @media screen and (max-width: 480px) {
   body .box-coleccion {
     margin-left: 0;
-    margin-top: 16vh;
+    margin-top: 20vh;
   }
 }
 body .box-coleccion .remeras {
@@ -921,12 +917,24 @@ body .box-coleccion .remeras {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .remeras {
+    margin-top: 0;
+    justify-content: center;
+    height: 325vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .remeras {
-    height: 300vh;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 50vw);
-    justify-content: start;
+    margin-top: 0;
+    justify-content: center;
+    height: 380vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -946,10 +954,16 @@ body .box-coleccion .remeras .r-principal {
   grid-column: 1/4;
   height: 65vh;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .remeras .r-principal {
+    width: 100vw;
+    height: 67vh;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .remeras .r-principal {
-    width: 50vw;
-    height: 68vh;
+    width: 100vw;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 480px) {
@@ -959,21 +973,28 @@ body .box-coleccion .remeras .r-principal {
   }
 }
 body .box-coleccion .remeras .r-principal .remera-0 {
-  height: 63vh;
-  width: 22vw;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
+  scale: 100%;
+}
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .remeras .r-principal .remera-0 {
+    scale: 90%;
+  }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .remeras .r-principal .remera-0 {
-    width: 42vw;
-    height: 68vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-principal .remera-0 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .remeras .r-principal .remera-0 {
+    scale: 67%;
   }
 }
 body .box-coleccion .remeras .r-principal .remera-0:hover {
@@ -990,20 +1011,43 @@ body .box-coleccion .remeras .r-principal .REMERA0 {
   margin-top: 58vh;
   font-size: 130%;
 }
-body .box-coleccion .remeras .r-secundario {
-  height: 45vh;
-  margin-top: 3vh;
-  position: relative;
-}
-@media screen and (max-width: 768px) {
-  body .box-coleccion .remeras .r-secundario {
-    margin-top: 0vh;
-    grid-column: 1/2;
-    width: 50vw;
-    height: 68vh;
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .remeras .r-principal .REMERA0 {
+    margin-top: 65vh;
   }
 }
 @media screen and (max-width: 480px) {
+  body .box-coleccion .remeras .r-principal .REMERA0 {
+    margin-top: 50vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .remeras .r-principal .REMERA0 {
+    margin-top: 56vh;
+  }
+}
+body .box-coleccion .remeras .r-secundario {
+  height: 45vh;
+  margin-top: 8vh;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .remeras .r-secundario {
+    grid-column: 1/4;
+    width: 100vw;
+    height: 67vh;
+    margin-top: 0vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .box-coleccion .remeras .r-secundario {
+    grid-column: 1/4;
+    width: 100vw;
+    height: 67vh;
+    margin-top: 0vh;
+  }
+}
+@media screen and (max-width: 320px) {
   body .box-coleccion .remeras .r-secundario {
     margin-top: 0vh;
     grid-column: 1/4;
@@ -1012,21 +1056,28 @@ body .box-coleccion .remeras .r-secundario {
   }
 }
 body .box-coleccion .remeras .r-secundario .remera-1 {
-  height: 43vh;
-  width: 15vw;
+  scale: 62%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .remeras .r-secundario .remera-1 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .remeras .r-secundario .remera-1 {
-    width: 42vw;
-    height: 68vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-secundario .remera-1 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .remeras .r-secundario .remera-1 {
+    scale: 67%;
   }
 }
 body .box-coleccion .remeras .r-secundario .remera-1:hover {
@@ -1039,22 +1090,44 @@ body .box-coleccion .remeras .r-secundario .REMERA1 {
   margin-top: 40vh;
   font-size: 130%;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .remeras .r-secundario .REMERA1 {
+    margin-top: 65vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .remeras .r-secundario .REMERA1 {
+    margin-top: 50vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .remeras .r-secundario .REMERA1 {
+    margin-top: 56vh;
+  }
+}
 body .box-coleccion .remeras .r-secundario .remera-2 {
-  height: 43vh;
-  width: 15vw;
+  scale: 62%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .remeras .r-secundario .remera-2 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .remeras .r-secundario .remera-2 {
-    width: 42vw;
-    height: 68vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-secundario .remera-2 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .remeras .r-secundario .remera-2 {
+    scale: 67%;
   }
 }
 body .box-coleccion .remeras .r-secundario .remera-2:hover {
@@ -1062,21 +1135,28 @@ body .box-coleccion .remeras .r-secundario .remera-2:hover {
   transition: 0.3s;
 }
 body .box-coleccion .remeras .r-secundario .remera-3 {
-  height: 43vh;
-  width: 15vw;
+  scale: 62%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .remeras .r-secundario .remera-3 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .remeras .r-secundario .remera-3 {
-    width: 42vw;
-    height: 68vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-secundario .remera-3 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .remeras .r-secundario .remera-3 {
+    scale: 67%;
   }
 }
 body .box-coleccion .remeras .r-secundario .remera-3:hover {
@@ -1084,17 +1164,26 @@ body .box-coleccion .remeras .r-secundario .remera-3:hover {
   transition: 0.3s;
 }
 body .box-coleccion .camisas {
-  margin-top: 10vh;
+  margin-top: 15vh;
   height: 110vh;
   width: 100%;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .camisas {
+    justify-content: center;
+    height: 325vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .camisas {
     justify-content: center;
-    height: 290vh;
+    height: 380vh;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(1, 1fr);
     margin-top: 0;
@@ -1118,6 +1207,12 @@ body .box-coleccion .camisas .c-principal {
   grid-column: 1/4;
   height: 65vh;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .camisas .c-principal {
+    width: 100vw;
+    height: 67vh;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .camisas .c-principal {
     width: 100vw;
@@ -1131,21 +1226,28 @@ body .box-coleccion .camisas .c-principal {
   }
 }
 body .box-coleccion .camisas .c-principal .camisa-0 {
-  height: 63vh;
-  width: 22vw;
+  scale: 100%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .camisas .c-principal .camisa-0 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .camisas .c-principal .camisa-0 {
-    width: 70vw;
-    height: 60vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-principal .camisa-0 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .camisas .c-principal .camisa-0 {
+    scale: 67%;
   }
 }
 body .box-coleccion .camisas .c-principal .camisa-0:hover {
@@ -1158,10 +1260,33 @@ body .box-coleccion .camisas .c-principal .CAMISA0 {
   margin-top: 58vh;
   font-size: 130%;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .camisas .c-principal .CAMISA0 {
+    margin-top: 65vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .camisas .c-principal .CAMISA0 {
+    margin-top: 50vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .camisas .c-principal .CAMISA0 {
+    margin-top: 56vh;
+  }
+}
 body .box-coleccion .camisas .c-secundario {
   height: 45vh;
-  margin-top: 3vh;
+  margin-top: 8vh;
   position: relative;
+}
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .camisas .c-secundario {
+    grid-column: 1/4;
+    width: 100vw;
+    height: 67vh;
+    margin-top: 0vh;
+  }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .camisas .c-secundario {
@@ -1180,21 +1305,28 @@ body .box-coleccion .camisas .c-secundario {
   }
 }
 body .box-coleccion .camisas .c-secundario .camisa-1 {
-  height: 43vh;
-  width: 15vw;
+  scale: 62%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .camisas .c-secundario .camisa-1 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .camisas .c-secundario .camisa-1 {
-    width: 70vw;
-    height: 60vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-secundario .camisa-1 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .camisas .c-secundario .camisa-1 {
+    scale: 67%;
   }
 }
 body .box-coleccion .camisas .c-secundario .camisa-1:hover {
@@ -1207,22 +1339,44 @@ body .box-coleccion .camisas .c-secundario .CAMISA1 {
   margin-top: 40vh;
   font-size: 130%;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .camisas .c-secundario .CAMISA1 {
+    margin-top: 65vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .camisas .c-secundario .CAMISA1 {
+    margin-top: 50vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .camisas .c-secundario .CAMISA1 {
+    margin-top: 56vh;
+  }
+}
 body .box-coleccion .camisas .c-secundario .camisa-2 {
-  height: 43vh;
-  width: 15vw;
+  scale: 62%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .camisas .c-secundario .camisa-2 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .camisas .c-secundario .camisa-2 {
-    width: 70vw;
-    height: 60vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-secundario .camisa-2 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .camisas .c-secundario .camisa-2 {
+    scale: 67%;
   }
 }
 body .box-coleccion .camisas .c-secundario .camisa-2:hover {
@@ -1230,21 +1384,28 @@ body .box-coleccion .camisas .c-secundario .camisa-2:hover {
   transition: 0.3s;
 }
 body .box-coleccion .camisas .c-secundario .camisa-3 {
-  height: 43vh;
-  width: 15vw;
+  scale: 62%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .camisas .c-secundario .camisa-3 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .camisas .c-secundario .camisa-3 {
-    width: 70vw;
-    height: 60vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-secundario .camisa-3 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .camisas .c-secundario .camisa-3 {
+    scale: 67%;
   }
 }
 body .box-coleccion .camisas .c-secundario .camisa-3:hover {
@@ -1252,17 +1413,26 @@ body .box-coleccion .camisas .c-secundario .camisa-3:hover {
   transition: 0.3s;
 }
 body .box-coleccion .pantalones {
-  margin-top: 10vh;
+  margin-top: 15vh;
   height: 110vh;
   width: 100%;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .pantalones {
+    justify-content: center;
+    height: 325vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .pantalones {
     justify-content: center;
-    height: 290vh;
+    height: 380vh;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(1, 1fr);
     margin-top: 0;
@@ -1287,6 +1457,12 @@ body .box-coleccion .pantalones .p-principal {
   height: 65vh;
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .pantalones .p-principal {
+    width: 100vw;
+    height: 67vh;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .pantalones .p-principal {
     width: 100vw;
@@ -1300,21 +1476,28 @@ body .box-coleccion .pantalones .p-principal {
   }
 }
 body .box-coleccion .pantalones .p-principal .pantalon-0 {
-  height: 63vh;
-  width: 22vw;
+  scale: 100%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .pantalones .p-principal .pantalon-0 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .pantalones .p-principal .pantalon-0 {
-    width: 70vw;
-    height: 60vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-principal .pantalon-0 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .pantalones .p-principal .pantalon-0 {
+    scale: 67%;
   }
 }
 body .box-coleccion .pantalones .p-principal .pantalon-0:hover {
@@ -1327,10 +1510,33 @@ body .box-coleccion .pantalones .p-principal .PANTALON0 {
   margin-top: 58vh;
   font-size: 130%;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .pantalones .p-principal .PANTALON0 {
+    margin-top: 65vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .pantalones .p-principal .PANTALON0 {
+    margin-top: 50vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .pantalones .p-principal .PANTALON0 {
+    margin-top: 56vh;
+  }
+}
 body .box-coleccion .pantalones .p-secundario {
   height: 45vh;
-  margin-top: 3vh;
+  margin-top: 8vh;
   position: relative;
+}
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .pantalones .p-secundario {
+    grid-column: 1/4;
+    margin-top: 0vh;
+    width: 100vw;
+    height: 67vh;
+  }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .pantalones .p-secundario {
@@ -1349,21 +1555,28 @@ body .box-coleccion .pantalones .p-secundario {
   }
 }
 body .box-coleccion .pantalones .p-secundario .pantalon-1 {
-  height: 43vh;
-  width: 15vw;
+  scale: 62%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .pantalones .p-secundario .pantalon-1 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-1 {
-    width: 70vw;
-    height: 60vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-1 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .pantalones .p-secundario .pantalon-1 {
+    scale: 67%;
   }
 }
 body .box-coleccion .pantalones .p-secundario .pantalon-1:hover {
@@ -1376,22 +1589,44 @@ body .box-coleccion .pantalones .p-secundario .PANTALON1 {
   margin-top: 40vh;
   font-size: 130%;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .pantalones .p-secundario .PANTALON1 {
+    margin-top: 65vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .pantalones .p-secundario .PANTALON1 {
+    margin-top: 50vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .pantalones .p-secundario .PANTALON1 {
+    margin-top: 56vh;
+  }
+}
 body .box-coleccion .pantalones .p-secundario .pantalon-2 {
-  height: 43vh;
-  width: 15vw;
+  scale: 62%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .pantalones .p-secundario .pantalon-2 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-2 {
-    width: 70vw;
-    height: 60vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-2 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .pantalones .p-secundario .pantalon-2 {
+    scale: 67%;
   }
 }
 body .box-coleccion .pantalones .p-secundario .pantalon-2:hover {
@@ -1399,21 +1634,28 @@ body .box-coleccion .pantalones .p-secundario .pantalon-2:hover {
   transition: 0.3s;
 }
 body .box-coleccion .pantalones .p-secundario .pantalon-3 {
-  height: 43vh;
-  width: 15vw;
+  scale: 62%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .pantalones .p-secundario .pantalon-3 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-3 {
-    width: 70vw;
-    height: 60vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-3 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .pantalones .p-secundario .pantalon-3 {
+    scale: 67%;
   }
 }
 body .box-coleccion .pantalones .p-secundario .pantalon-3:hover {
@@ -1421,17 +1663,26 @@ body .box-coleccion .pantalones .p-secundario .pantalon-3:hover {
   transition: 0.3s;
 }
 body .box-coleccion .bermudas {
-  margin-top: 10vh;
+  margin-top: 15vh;
   height: 110vh;
   width: 100%;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .bermudas {
+    justify-content: center;
+    height: 325vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .bermudas {
     justify-content: center;
-    height: 279vh;
+    height: 380vh;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(1, 1fr);
     margin-top: 0;
@@ -1440,7 +1691,7 @@ body .box-coleccion .bermudas {
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas {
     justify-content: center;
-    height: 279vh;
+    height: 290vh;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(1, 1fr);
     margin-top: 0;
@@ -1456,6 +1707,12 @@ body .box-coleccion .bermudas .b-principal {
   height: 65vh;
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .bermudas .b-principal {
+    width: 100vw;
+    height: 67vh;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .bermudas .b-principal {
     width: 100vw;
@@ -1469,21 +1726,28 @@ body .box-coleccion .bermudas .b-principal {
   }
 }
 body .box-coleccion .bermudas .b-principal .bermuda-0 {
-  height: 63vh;
-  width: 22vw;
+  scale: 100%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .bermudas .b-principal .bermuda-0 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .bermudas .b-principal .bermuda-0 {
-    width: 70vw;
-    height: 60vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-principal .bermuda-0 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .bermudas .b-principal .bermuda-0 {
+    scale: 67%;
   }
 }
 body .box-coleccion .bermudas .b-principal .bermuda-0:hover {
@@ -1496,10 +1760,33 @@ body .box-coleccion .bermudas .b-principal .BERMUDA0 {
   margin-top: 58vh;
   font-size: 130%;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .bermudas .b-principal .BERMUDA0 {
+    margin-top: 65vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .bermudas .b-principal .BERMUDA0 {
+    margin-top: 50vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .bermudas .b-principal .BERMUDA0 {
+    margin-top: 56vh;
+  }
+}
 body .box-coleccion .bermudas .b-secundario {
   height: 45vh;
-  margin-top: 3vh;
+  margin-top: 8vh;
   position: relative;
+}
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .bermudas .b-secundario {
+    grid-column: 1/4;
+    margin-top: 0vh;
+    width: 100vw;
+    height: 67vh;
+  }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .bermudas .b-secundario {
@@ -1518,21 +1805,28 @@ body .box-coleccion .bermudas .b-secundario {
   }
 }
 body .box-coleccion .bermudas .b-secundario .bermuda-1 {
-  height: 43vh;
-  width: 15vw;
+  scale: 62%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .bermudas .b-secundario .bermuda-1 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-1 {
-    width: 70vw;
-    height: 60vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-1 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .bermudas .b-secundario .bermuda-1 {
+    scale: 67%;
   }
 }
 body .box-coleccion .bermudas .b-secundario .bermuda-1:hover {
@@ -1545,22 +1839,44 @@ body .box-coleccion .bermudas .b-secundario .BERMUDA1 {
   margin-top: 40vh;
   font-size: 130%;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .bermudas .b-secundario .BERMUDA1 {
+    margin-top: 65vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .bermudas .b-secundario .BERMUDA1 {
+    margin-top: 50vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .bermudas .b-secundario .BERMUDA1 {
+    margin-top: 56vh;
+  }
+}
 body .box-coleccion .bermudas .b-secundario .bermuda-2 {
-  height: 43vh;
-  width: 15vw;
+  scale: 62%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .bermudas .b-secundario .bermuda-2 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-2 {
-    width: 70vw;
-    height: 60vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-2 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .bermudas .b-secundario .bermuda-2 {
+    scale: 67%;
   }
 }
 body .box-coleccion .bermudas .b-secundario .bermuda-2:hover {
@@ -1568,21 +1884,28 @@ body .box-coleccion .bermudas .b-secundario .bermuda-2:hover {
   transition: 0.3s;
 }
 body .box-coleccion .bermudas .b-secundario .bermuda-3 {
-  height: 43vh;
-  width: 15vw;
+  scale: 62%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .bermudas .b-secundario .bermuda-3 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-3 {
-    width: 70vw;
-    height: 60vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-3 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .bermudas .b-secundario .bermuda-3 {
+    scale: 67%;
   }
 }
 body .box-coleccion .bermudas .b-secundario .bermuda-3:hover {
@@ -1590,18 +1913,28 @@ body .box-coleccion .bermudas .b-secundario .bermuda-3:hover {
   transition: 0.3s;
 }
 body .box-coleccion .accesorios {
-  margin-top: 10vh;
+  margin-top: 15vh;
   height: 110vh;
   width: 100%;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .accesorios {
+    margin-top: 0;
+    justify-content: center;
+    height: 325vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .accesorios {
     margin-top: 0;
     justify-content: center;
-    height: 290vh;
+    height: 380vh;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(1, 1fr);
     margin-top: 0;
@@ -1627,6 +1960,12 @@ body .box-coleccion .accesorios .a-principal {
   height: 65vh;
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .accesorios .a-principal {
+    width: 100vw;
+    height: 67vh;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .accesorios .a-principal {
     width: 100vw;
@@ -1640,21 +1979,28 @@ body .box-coleccion .accesorios .a-principal {
   }
 }
 body .box-coleccion .accesorios .a-principal .accesorio-0 {
-  height: 63vh;
-  width: 22vw;
+  scale: 100%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .accesorios .a-principal .accesorio-0 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .accesorios .a-principal .accesorio-0 {
-    width: 70vw;
-    height: 60vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-principal .accesorio-0 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .accesorios .a-principal .accesorio-0 {
+    scale: 67%;
   }
 }
 body .box-coleccion .accesorios .a-principal .accesorio-0:hover {
@@ -1667,10 +2013,33 @@ body .box-coleccion .accesorios .a-principal .ACCESORIO0 {
   margin-top: 58vh;
   font-size: 130%;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .accesorios .a-principal .ACCESORIO0 {
+    margin-top: 65vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .accesorios .a-principal .ACCESORIO0 {
+    margin-top: 50vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .accesorios .a-principal .ACCESORIO0 {
+    margin-top: 56vh;
+  }
+}
 body .box-coleccion .accesorios .a-secundario {
   height: 45vh;
-  margin-top: 3vh;
+  margin-top: 8vh;
   position: relative;
+}
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .accesorios .a-secundario {
+    grid-column: 1/4;
+    margin-top: 0vh;
+    width: 100vw;
+    height: 67vh;
+  }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .accesorios .a-secundario {
@@ -1689,21 +2058,28 @@ body .box-coleccion .accesorios .a-secundario {
   }
 }
 body .box-coleccion .accesorios .a-secundario .accesorio-1 {
-  height: 43vh;
-  width: 15vw;
+  scale: 62%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .accesorios .a-secundario .accesorio-1 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-1 {
-    width: 70vw;
-    height: 60vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-1 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .accesorios .a-secundario .accesorio-1 {
+    scale: 67%;
   }
 }
 body .box-coleccion .accesorios .a-secundario .accesorio-1:hover {
@@ -1716,22 +2092,44 @@ body .box-coleccion .accesorios .a-secundario .ACCESORIO1 {
   margin-top: 40vh;
   font-size: 130%;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .accesorios .a-secundario .ACCESORIO1 {
+    margin-top: 65vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .accesorios .a-secundario .ACCESORIO1 {
+    margin-top: 50vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .accesorios .a-secundario .ACCESORIO1 {
+    margin-top: 56vh;
+  }
+}
 body .box-coleccion .accesorios .a-secundario .accesorio-2 {
-  height: 43vh;
-  width: 15vw;
+  scale: 62%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .accesorios .a-secundario .accesorio-2 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-2 {
-    width: 70vw;
-    height: 60vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-2 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .accesorios .a-secundario .accesorio-2 {
+    scale: 67%;
   }
 }
 body .box-coleccion .accesorios .a-secundario .accesorio-2:hover {
@@ -1739,21 +2137,28 @@ body .box-coleccion .accesorios .a-secundario .accesorio-2:hover {
   transition: 0.3s;
 }
 body .box-coleccion .accesorios .a-secundario .accesorio-3 {
-  height: 43vh;
-  width: 15vw;
+  scale: 62%;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
+@media screen and (max-width: 1024px) {
+  body .box-coleccion .accesorios .a-secundario .accesorio-3 {
+    scale: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-3 {
-    width: 70vw;
-    height: 60vh;
+    scale: 55%;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-3 {
-    width: 70vw;
-    height: 60vh;
+    scale: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .accesorios .a-secundario .accesorio-3 {
+    scale: 67%;
   }
 }
 body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
@@ -1764,11 +2169,17 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
 .container-flow .text-footer {
   margin-left: 9vw;
 }
+@media screen and (max-width: 480px) {
+  .container-flow .text-footer {
+    margin-left: 0;
+  }
+}
 
 .main-buscador {
   height: 360vh;
   background-color: rgb(241, 228, 208);
   padding-top: 30vh;
+  max-width: 100%;
 }
 @media screen and (max-width: 1200px) {
   .main-buscador {
@@ -1892,11 +2303,6 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
   height: 300vh;
   margin-top: 10vh;
   width: 100%;
-}
-@media screen and (max-width: 1200px) {
-  .main-buscador .box-inventario .inventario {
-    height: 280vh;
-  }
 }
 @media screen and (max-width: 1024px) {
   .main-buscador .box-inventario .inventario {
@@ -2029,7 +2435,7 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
     height: 0;
   }
 }
-.container-flow .row .col-12 {
+.container-flow .row .titulo-footer {
   font-family: "fuente-logo";
   font-weight: 100;
   font-size: 160%;
@@ -2037,24 +2443,24 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
   margin-top: 25vh;
 }
 @media screen and (max-width: 1024px) {
-  .container-flow .row .col-12 {
+  .container-flow .row .titulo-footer {
     margin-top: 30vh;
   }
 }
 @media screen and (max-width: 768px) {
-  .container-flow .row .col-12 {
+  .container-flow .row .titulo-footer {
     margin-top: 25vh;
   }
 }
 @media screen and (max-width: 480px) {
-  .container-flow .row .col-12 {
+  .container-flow .row .titulo-footer {
     font-size: 160%;
     margin-top: 32vh;
     height: 15vh;
   }
 }
 .container-flow .row .redes {
-  padding-top: 0vh;
+  padding-top: 20vh;
   font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
   font-size: 100%;
 }
