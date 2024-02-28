@@ -1,3 +1,4 @@
+/*MAIN*/
 .main-contactanos {
     height: 100vh;
     background-color:nth($list: $colores, $n: 5);
@@ -10,6 +11,7 @@
         justify-content: start;
         align-items: start;
     }
+    /*FORMULARIO*/
     .formulario-contactanos {
         display: flex;
         flex-direction: column;

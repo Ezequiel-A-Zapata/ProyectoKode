@@ -1,6 +1,7 @@
 
 body{
     max-width: 100%;
+    /*MAIN*/
 .main-coleccion {
     height: 665vh;
     background-color: nth($list: $colores, $n:5 );
@@ -21,6 +22,7 @@ body{
         height: 1455vh;
         margin-left: 0;
     }
+    /*BOX DE CLASIFICACION*/
     .box-clasificacion {
         margin-top: 23%;
         margin-left: 3vw;
@@ -61,6 +63,7 @@ body{
             }
         }
         }
+        /*PALABRAS DENTRO DEL BOX*/
         .clasificacion {
             list-style-type: none;
             font-family:"Neue-Helvetica","Helvetica","Arial","sans-serif";
@@ -73,7 +76,6 @@ body{
             gap:5vh;
             margin-left: 2vw;
             @include s-mobile{
-                // flex-direction: row;
                 gap: 4vw;
                 font-size: 50%;
                 margin-left: 1.2vw;
@@ -86,6 +88,7 @@ body{
             }
         }
     }
+    /*BOX DE COLECCION*/
     .box-coleccion {    
         width: 75%;
         height: 375vh;
@@ -104,6 +107,7 @@ body{
             margin-left: 0;
             margin-top: 20vh;
         }
+        /*REMERAS*/
         .remeras {
             height: 113vh;
             width: 100%;
@@ -138,6 +142,7 @@ body{
                 justify-content: center;
                 align-items: center;
             }
+            /*REMERA PRINCIPAL*/
             .r-principal {
                 grid-column: 1/4;
                 height: 65vh;
@@ -194,6 +199,7 @@ body{
                     }
                 }
             }
+            /*REMERAS SECUNDARIAS*/
             .r-secundario{
                 height: 45vh;
                 margin-top: 8vh;
@@ -297,6 +303,7 @@ body{
                 }
             }
         }
+        /*CAMISAS*/
         .camisas {
             margin-top: 15vh;
             height: 110vh;
@@ -330,6 +337,7 @@ body{
                 justify-content: center;
                 align-items: center;
             }
+            /*CAMISA PRINCIPAL*/
             .c-principal {
                 grid-column: 1/4;
                 height: 65vh;
@@ -382,6 +390,7 @@ body{
                     }
                 }
             }
+            /*CAMISAS SECUNDARIAS*/
             .c-secundario{
                 height: 45vh;
                 margin-top: 8vh;
@@ -484,6 +493,7 @@ body{
                 }
             }
         }
+        /*PANTALONES*/
         .pantalones {
             margin-top: 15vh;
             height: 110vh;
@@ -516,7 +526,7 @@ body{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-            }
+            } /*PANTALON PRINCIPAL*/
             .p-principal {
                 grid-column: 1/4;
                 height: 65vh;
@@ -570,6 +580,7 @@ body{
                     }
                 }
             }
+            /*PANTALONES SECUNDARIOS*/
             .p-secundario{
                 height: 45vh;
                 margin-top: 8vh;
@@ -672,6 +683,7 @@ body{
                 }
             }
         }
+        /*BERMUDAS*/
         .bermudas {
             margin-top: 15vh;
             height: 110vh;
@@ -705,6 +717,7 @@ body{
                 justify-content: center;
                 align-items: center;
             }
+            /*BERMUDA PRINCIPAL*/
             .b-principal {
                 grid-column: 1/4;
                 height: 65vh;
@@ -757,7 +770,8 @@ body{
                         margin-top: 56vh;
                     }
                 }
-            }
+            } 
+            /*BERMUDAS SECUDARIAS*/
             .b-secundario{
                 height: 45vh;
                 margin-top: 8vh;
@@ -859,7 +873,7 @@ body{
                     }
                 }
             }
-        }
+        }/*ACCESORIOS*/
         .accesorios {
             margin-top: 15vh;
             height: 110vh;
@@ -896,6 +910,7 @@ body{
                 justify-content: center;
                 align-items: center;
             }
+            /*ACCESORIO PRINCIPAL*/
             .a-principal {
                 grid-column: 1/4;
                 height: 65vh;
@@ -951,6 +966,7 @@ body{
                     }
                 }
             }
+            /*ACCESORIOS SECUNDARIOS*/
             .a-secundario{
                 height: 45vh;
                 margin-top: 8vh;
@@ -1055,6 +1071,7 @@ body{
         }
     }
 }
+/*FOOTER DIFERENCIADO*/
 .container-flow{
     .text-footer{
         margin-left: 9vw;

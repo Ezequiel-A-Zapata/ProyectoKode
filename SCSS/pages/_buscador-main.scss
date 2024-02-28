@@ -1,7 +1,7 @@
+/*MAIN*/
 .main-buscador {
     height: 360vh;
     background-color: nth($list: $colores, $n:5 );
-    // max-width: 100vw;
     padding-top: 30vh;
     max-width: 100%;
     @include notebook{
@@ -20,9 +20,10 @@
         padding-top: 14vh;
         height: 1350vh;
     }
+    /*NAVBAR DEL BUSCADOR*/
     .navbar {
         margin-left: 27.8vw;
-        width: 71vw;                                    /*75vw*/
+        width: 71vw;                                  
         padding: 0;
         border: solid nth($list: $colores, $n: 2) 1px;
         border-right: none;
@@ -94,6 +95,7 @@
             }
         }
     }
+    /*BOX DE INVENTARIO*/
     .box-inventario {
         display: flex;
         justify-content: end;
@@ -126,7 +128,6 @@
                 grid-template-rows: repeat(20, 1fr);
             }
             .borde {
-                // border: solid nth($list: $colores, $n:2 ) 1px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -152,25 +153,17 @@
                     transition: 0.3s;
                 }
                 .productos{
-                    // height: 53vh;
-                    // width: 18vw;
                     scale: 70%;
                     box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
                     @include notebook {
-                        // height: 46vh;
-                        // width: 21vw;
                     }
                     @include mobile{
-                        // height: 58vh;
-                        // width: 28vw;
                         scale: 70%;
                     }
                     @include s-mobile{
                         scale: 77%;
                     }
                     @include vs-mobile{
-                        // height: 58vh;
-                        // width: 83vw;
                         scale: 60%;
                     }
                 }
