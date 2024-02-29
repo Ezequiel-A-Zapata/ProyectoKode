@@ -1030,7 +1030,7 @@ body .box-coleccion .remeras .r-principal .remera-0 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-principal .remera-0 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -1126,7 +1126,7 @@ body .box-coleccion .remeras .r-secundario .remera-1 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-secundario .remera-1 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -1181,7 +1181,7 @@ body .box-coleccion .remeras .r-secundario .remera-2 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-secundario .remera-2 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -1215,7 +1215,7 @@ body .box-coleccion .remeras .r-secundario .remera-3 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-secundario .remera-3 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -1266,7 +1266,7 @@ body .box-coleccion .camisas {
     margin-top: 0;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   body .box-coleccion .camisas {
     justify-content: center;
     height: 280vh;
@@ -1328,7 +1328,7 @@ body .box-coleccion .camisas .c-principal .camisa-0 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-principal .camisa-0 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -1420,7 +1420,7 @@ body .box-coleccion .camisas .c-secundario .camisa-1 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-secundario .camisa-1 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -1475,7 +1475,7 @@ body .box-coleccion .camisas .c-secundario .camisa-2 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-secundario .camisa-2 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -1509,7 +1509,7 @@ body .box-coleccion .camisas .c-secundario .camisa-3 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-secundario .camisa-3 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -1560,7 +1560,7 @@ body .box-coleccion .pantalones {
     margin-top: 0;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   body .box-coleccion .pantalones {
     justify-content: center;
     height: 280vh;
@@ -1623,7 +1623,7 @@ body .box-coleccion .pantalones .p-principal .pantalon-0 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-principal .pantalon-0 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -1715,7 +1715,7 @@ body .box-coleccion .pantalones .p-secundario .pantalon-1 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-1 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -1770,7 +1770,7 @@ body .box-coleccion .pantalones .p-secundario .pantalon-2 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-2 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -1804,7 +1804,7 @@ body .box-coleccion .pantalones .p-secundario .pantalon-3 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-3 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -1918,7 +1918,7 @@ body .box-coleccion .bermudas .b-principal .bermuda-0 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-principal .bermuda-0 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -2010,7 +2010,7 @@ body .box-coleccion .bermudas .b-secundario .bermuda-1 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-1 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -2065,7 +2065,7 @@ body .box-coleccion .bermudas .b-secundario .bermuda-2 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-2 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -2099,7 +2099,7 @@ body .box-coleccion .bermudas .b-secundario .bermuda-3 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-3 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -2217,7 +2217,7 @@ body .box-coleccion .accesorios .a-principal .accesorio-0 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-principal .accesorio-0 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -2309,7 +2309,7 @@ body .box-coleccion .accesorios .a-secundario .accesorio-1 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-1 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -2364,7 +2364,7 @@ body .box-coleccion .accesorios .a-secundario .accesorio-2 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-2 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
@@ -2398,7 +2398,7 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-3 {
-    width: 64vw;
+    width: 80vw;
     height: 56vh;
   }
 }
