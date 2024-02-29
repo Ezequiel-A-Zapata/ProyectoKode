@@ -190,7 +190,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -209,12 +209,15 @@ body{
                     display: flex;
                     position: absolute;
                     margin-top:58vh;
-                    font-size: 130%;
+                    font-size: 110%;
+                    @include notebook{
+                        margin-top: 61vh;
+                    }
                     @include tablet{
                         margin-top: 65vh;
                     }
                     @include s-mobile{
-                        margin-top: 50vh;
+                        margin-top: 60vh;
                     }
                     @include vs-mobile{
                         margin-top: 56vh;
@@ -265,7 +268,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -280,12 +283,15 @@ body{
                     display: flex;
                     position: absolute;
                     margin-top: 40vh;
-                    font-size: 130%;
+                    font-size: 110%;
+                    @include notebook{
+                        margin-top: 42vh;
+                    }
                     @include tablet{
                         margin-top: 65vh;
                     }
                     @include s-mobile{
-                        margin-top: 50vh;
+                        margin-top: 60vh;
                     }
                     @include vs-mobile{
                         margin-top: 56vh;
@@ -306,7 +312,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -332,7 +338,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -422,7 +428,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -437,12 +443,15 @@ body{
                     display: flex;
                     position: absolute;
                     margin-top:58vh;
-                    font-size: 130%;
+                    font-size: 110%;
+                    @include notebook{
+                        margin-top: 61vh;
+                    }
                     @include tablet{
                         margin-top: 65vh;
                     }
                     @include s-mobile{
-                        margin-top: 50vh;
+                        margin-top: 60vh;
                     }
                     @include vs-mobile{
                         margin-top: 56vh;
@@ -493,7 +502,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -508,12 +517,15 @@ body{
                     display: flex;
                     position: absolute;
                     margin-top: 40vh;
-                    font-size: 130%;
+                    font-size: 110%;
+                    @include notebook{
+                        margin-top: 42vh;
+                    }
                     @include tablet{
                         margin-top: 65vh;
                     }
                     @include s-mobile{
-                        margin-top: 50vh;
+                        margin-top: 60vh;
                     }
                     @include vs-mobile{
                         margin-top: 56vh;
@@ -534,7 +546,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -560,7 +572,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -649,7 +661,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -664,12 +676,15 @@ body{
                     display: flex;
                     position: absolute;
                     margin-top:58vh;
-                    font-size: 130%;
+                    font-size: 110%;
+                    @include notebook{
+                        margin-top: 61vh;
+                    }
                     @include tablet{
                         margin-top: 65vh;
                     }
                     @include s-mobile{
-                        margin-top: 50vh;
+                        margin-top: 60vh;
                     }
                     @include vs-mobile{
                         margin-top: 56vh;
@@ -720,7 +735,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -735,12 +750,15 @@ body{
                     display: flex;
                     position: absolute;
                     margin-top: 40vh;
-                    font-size: 130%;
+                    font-size: 110%;
+                    @include notebook{
+                        margin-top: 42vh;
+                    }
                     @include tablet{
                         margin-top: 65vh;
                     }
                     @include s-mobile{
-                        margin-top: 50vh;
+                        margin-top: 60vh;
                     }
                     @include vs-mobile{
                     margin-top: 56vh;
@@ -761,7 +779,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -787,7 +805,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -877,7 +895,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -892,12 +910,15 @@ body{
                     display: flex;
                     position: absolute;
                     margin-top:58vh;
-                    font-size: 130%;
+                    font-size: 110%;
+                    @include notebook{
+                        margin-top: 61vh;
+                    }
                     @include tablet{
                         margin-top: 65vh;
                     }
                     @include s-mobile{
-                        margin-top: 50vh;
+                        margin-top: 60vh;
                     }
                     @include vs-mobile{
                         margin-top: 56vh;
@@ -948,7 +969,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -963,12 +984,15 @@ body{
                     display: flex;
                     position: absolute;
                     margin-top: 40vh;
-                    font-size: 130%;
+                    font-size: 110%;
+                    @include notebook{
+                        margin-top: 42vh;
+                    }
                     @include tablet{
                         margin-top: 65vh;
                     }
                     @include s-mobile{
-                        margin-top: 50vh;
+                        margin-top: 60vh;
                     }
                     @include vs-mobile{
                         margin-top: 56vh;
@@ -989,7 +1013,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -1015,7 +1039,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -1108,7 +1132,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -1123,12 +1147,15 @@ body{
                     display: flex;
                     position: absolute;
                     margin-top:58vh;
-                    font-size: 130%;
+                    font-size: 110%;
+                    @include notebook{
+                        margin-top: 61vh;
+                    }
                     @include tablet{
                         margin-top: 65vh;
                     }
                     @include s-mobile{
-                        margin-top: 50vh;
+                        margin-top: 60vh;
                     }
                     @include vs-mobile{
                         margin-top: 56vh;
@@ -1179,7 +1206,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -1194,12 +1221,15 @@ body{
                     display: flex;
                     position: absolute;
                     margin-top: 40vh;
-                    font-size: 130%;
+                    font-size: 110%;
+                    @include notebook{
+                        margin-top: 42vh;
+                    }
                     @include tablet{
                         margin-top: 65vh;
                     }
                     @include s-mobile{
-                        margin-top: 50vh;
+                        margin-top: 60vh;
                     }
                     @include vs-mobile{
                         margin-top: 56vh;
@@ -1220,7 +1250,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;
@@ -1246,7 +1276,7 @@ body{
                     }
                     @include s-mobile{
                         width: 80vw;
-                        height: 65vh;
+                        height: 67vh;
                     }
                     @include vs-mobile{
                         height: 62vh;

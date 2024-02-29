@@ -1031,7 +1031,7 @@ body .box-coleccion .remeras .r-principal .remera-0 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-principal .remera-0 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1052,7 +1052,12 @@ body .box-coleccion .remeras .r-principal .REMERA0 {
   display: flex;
   position: absolute;
   margin-top: 58vh;
-  font-size: 130%;
+  font-size: 110%;
+}
+@media screen and (max-width: 1200px) {
+  body .box-coleccion .remeras .r-principal .REMERA0 {
+    margin-top: 61vh;
+  }
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .remeras .r-principal .REMERA0 {
@@ -1061,7 +1066,7 @@ body .box-coleccion .remeras .r-principal .REMERA0 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-principal .REMERA0 {
-    margin-top: 50vh;
+    margin-top: 60vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1127,7 +1132,7 @@ body .box-coleccion .remeras .r-secundario .remera-1 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-secundario .remera-1 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1144,7 +1149,12 @@ body .box-coleccion .remeras .r-secundario .REMERA1 {
   display: flex;
   position: absolute;
   margin-top: 40vh;
-  font-size: 130%;
+  font-size: 110%;
+}
+@media screen and (max-width: 1200px) {
+  body .box-coleccion .remeras .r-secundario .REMERA1 {
+    margin-top: 42vh;
+  }
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .remeras .r-secundario .REMERA1 {
@@ -1153,7 +1163,7 @@ body .box-coleccion .remeras .r-secundario .REMERA1 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-secundario .REMERA1 {
-    margin-top: 50vh;
+    margin-top: 60vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1182,7 +1192,7 @@ body .box-coleccion .remeras .r-secundario .remera-2 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-secundario .remera-2 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1216,7 +1226,7 @@ body .box-coleccion .remeras .r-secundario .remera-3 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-secundario .remera-3 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1329,7 +1339,7 @@ body .box-coleccion .camisas .c-principal .camisa-0 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-principal .camisa-0 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1346,7 +1356,12 @@ body .box-coleccion .camisas .c-principal .CAMISA0 {
   display: flex;
   position: absolute;
   margin-top: 58vh;
-  font-size: 130%;
+  font-size: 110%;
+}
+@media screen and (max-width: 1200px) {
+  body .box-coleccion .camisas .c-principal .CAMISA0 {
+    margin-top: 61vh;
+  }
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .camisas .c-principal .CAMISA0 {
@@ -1355,7 +1370,7 @@ body .box-coleccion .camisas .c-principal .CAMISA0 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-principal .CAMISA0 {
-    margin-top: 50vh;
+    margin-top: 60vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1421,7 +1436,7 @@ body .box-coleccion .camisas .c-secundario .camisa-1 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-secundario .camisa-1 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1438,7 +1453,12 @@ body .box-coleccion .camisas .c-secundario .CAMISA1 {
   display: flex;
   position: absolute;
   margin-top: 40vh;
-  font-size: 130%;
+  font-size: 110%;
+}
+@media screen and (max-width: 1200px) {
+  body .box-coleccion .camisas .c-secundario .CAMISA1 {
+    margin-top: 42vh;
+  }
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .camisas .c-secundario .CAMISA1 {
@@ -1447,7 +1467,7 @@ body .box-coleccion .camisas .c-secundario .CAMISA1 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-secundario .CAMISA1 {
-    margin-top: 50vh;
+    margin-top: 60vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1476,7 +1496,7 @@ body .box-coleccion .camisas .c-secundario .camisa-2 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-secundario .camisa-2 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1510,7 +1530,7 @@ body .box-coleccion .camisas .c-secundario .camisa-3 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-secundario .camisa-3 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1624,7 +1644,7 @@ body .box-coleccion .pantalones .p-principal .pantalon-0 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-principal .pantalon-0 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1641,7 +1661,12 @@ body .box-coleccion .pantalones .p-principal .PANTALON0 {
   display: flex;
   position: absolute;
   margin-top: 58vh;
-  font-size: 130%;
+  font-size: 110%;
+}
+@media screen and (max-width: 1200px) {
+  body .box-coleccion .pantalones .p-principal .PANTALON0 {
+    margin-top: 61vh;
+  }
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .pantalones .p-principal .PANTALON0 {
@@ -1650,7 +1675,7 @@ body .box-coleccion .pantalones .p-principal .PANTALON0 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-principal .PANTALON0 {
-    margin-top: 50vh;
+    margin-top: 60vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1716,7 +1741,7 @@ body .box-coleccion .pantalones .p-secundario .pantalon-1 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-1 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1733,7 +1758,12 @@ body .box-coleccion .pantalones .p-secundario .PANTALON1 {
   display: flex;
   position: absolute;
   margin-top: 40vh;
-  font-size: 130%;
+  font-size: 110%;
+}
+@media screen and (max-width: 1200px) {
+  body .box-coleccion .pantalones .p-secundario .PANTALON1 {
+    margin-top: 42vh;
+  }
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .pantalones .p-secundario .PANTALON1 {
@@ -1742,7 +1772,7 @@ body .box-coleccion .pantalones .p-secundario .PANTALON1 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-secundario .PANTALON1 {
-    margin-top: 50vh;
+    margin-top: 60vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1771,7 +1801,7 @@ body .box-coleccion .pantalones .p-secundario .pantalon-2 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-2 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1805,7 +1835,7 @@ body .box-coleccion .pantalones .p-secundario .pantalon-3 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-3 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1919,7 +1949,7 @@ body .box-coleccion .bermudas .b-principal .bermuda-0 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-principal .bermuda-0 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1936,7 +1966,12 @@ body .box-coleccion .bermudas .b-principal .BERMUDA0 {
   display: flex;
   position: absolute;
   margin-top: 58vh;
-  font-size: 130%;
+  font-size: 110%;
+}
+@media screen and (max-width: 1200px) {
+  body .box-coleccion .bermudas .b-principal .BERMUDA0 {
+    margin-top: 61vh;
+  }
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .bermudas .b-principal .BERMUDA0 {
@@ -1945,7 +1980,7 @@ body .box-coleccion .bermudas .b-principal .BERMUDA0 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-principal .BERMUDA0 {
-    margin-top: 50vh;
+    margin-top: 60vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -2011,7 +2046,7 @@ body .box-coleccion .bermudas .b-secundario .bermuda-1 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-1 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -2028,7 +2063,12 @@ body .box-coleccion .bermudas .b-secundario .BERMUDA1 {
   display: flex;
   position: absolute;
   margin-top: 40vh;
-  font-size: 130%;
+  font-size: 110%;
+}
+@media screen and (max-width: 1200px) {
+  body .box-coleccion .bermudas .b-secundario .BERMUDA1 {
+    margin-top: 42vh;
+  }
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .bermudas .b-secundario .BERMUDA1 {
@@ -2037,7 +2077,7 @@ body .box-coleccion .bermudas .b-secundario .BERMUDA1 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-secundario .BERMUDA1 {
-    margin-top: 50vh;
+    margin-top: 60vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -2066,7 +2106,7 @@ body .box-coleccion .bermudas .b-secundario .bermuda-2 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-2 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -2100,7 +2140,7 @@ body .box-coleccion .bermudas .b-secundario .bermuda-3 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-3 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -2218,7 +2258,7 @@ body .box-coleccion .accesorios .a-principal .accesorio-0 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-principal .accesorio-0 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -2235,7 +2275,12 @@ body .box-coleccion .accesorios .a-principal .ACCESORIO0 {
   display: flex;
   position: absolute;
   margin-top: 58vh;
-  font-size: 130%;
+  font-size: 110%;
+}
+@media screen and (max-width: 1200px) {
+  body .box-coleccion .accesorios .a-principal .ACCESORIO0 {
+    margin-top: 61vh;
+  }
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .accesorios .a-principal .ACCESORIO0 {
@@ -2244,7 +2289,7 @@ body .box-coleccion .accesorios .a-principal .ACCESORIO0 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-principal .ACCESORIO0 {
-    margin-top: 50vh;
+    margin-top: 60vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -2310,7 +2355,7 @@ body .box-coleccion .accesorios .a-secundario .accesorio-1 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-1 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -2327,7 +2372,12 @@ body .box-coleccion .accesorios .a-secundario .ACCESORIO1 {
   display: flex;
   position: absolute;
   margin-top: 40vh;
-  font-size: 130%;
+  font-size: 110%;
+}
+@media screen and (max-width: 1200px) {
+  body .box-coleccion .accesorios .a-secundario .ACCESORIO1 {
+    margin-top: 42vh;
+  }
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .accesorios .a-secundario .ACCESORIO1 {
@@ -2336,7 +2386,7 @@ body .box-coleccion .accesorios .a-secundario .ACCESORIO1 {
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-secundario .ACCESORIO1 {
-    margin-top: 50vh;
+    margin-top: 60vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -2365,7 +2415,7 @@ body .box-coleccion .accesorios .a-secundario .accesorio-2 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-2 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -2399,7 +2449,7 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3 {
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-3 {
     width: 80vw;
-    height: 65vh;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -2425,7 +2475,7 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
 
 /*MAIN*/
 .main-buscador {
-  height: 360vh;
+  height: 460vh;
   background-color: rgb(241, 228, 208);
   padding-top: 30vh;
   max-width: 100%;
@@ -2435,22 +2485,28 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
 @media screen and (max-width: 1200px) {
   .main-buscador {
     padding-top: 25vh;
-    height: 330vh;
+    height: 440vh;
   }
 }
 @media screen and (max-width: 1024px) {
   .main-buscador {
     padding-top: 27vh;
-    height: 695vh;
+    height: 850vh;
   }
 }
 @media screen and (max-width: 768px) {
   .main-buscador {
-    padding-top: 12vh;
-    height: 1160vh;
+    padding-top: 13vh;
+    height: 1040vh;
   }
 }
 @media screen and (max-width: 480px) {
+  .main-buscador {
+    padding-top: 14vh;
+    height: 1480vh;
+  }
+}
+@media screen and (max-width: 320px) {
   .main-buscador {
     padding-top: 14vh;
     height: 1350vh;
@@ -2470,7 +2526,6 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
   .main-buscador .navbar {
     margin-top: 18vh;
     padding: 0;
-    z-index: 2;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2481,6 +2536,7 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
     margin-top: 70vh;
     margin-left: 4vw;
     width: 94vw;
+    z-index: 2;
   }
 }
 .main-buscador .navbar:hover {
@@ -2510,35 +2566,48 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
 }
 @media screen and (max-width: 768px) {
   .main-buscador .navbar .container-fluid .formulario-buscador .form-control {
-    height: 2.5vh;
+    height: 8.5vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-buscador .navbar .container-fluid .formulario-buscador .form-control {
+    height: 3.5vh;
     font-size: 61%;
   }
 }
 .main-buscador .navbar .container-fluid .formulario-buscador .form-control:focus {
   background-color: white;
 }
-.main-buscador .navbar .container-fluid .formulario-buscador .btn {
+.main-buscador .navbar .container-fluid .formulario-buscador .boton {
   border-radius: 0;
-  border-top: none;
   border-bottom: none;
+  border-top: none;
+  border-left: none;
   border-color: rgb(71, 71, 71);
   background-color: beige;
   width: 10%;
   font-size: 80%;
   color: rgb(71, 71, 71);
+  height: 7vh;
 }
 @media screen and (max-width: 1200px) {
-  .main-buscador .navbar .container-fluid .formulario-buscador .btn {
+  .main-buscador .navbar .container-fluid .formulario-buscador .boton {
     width: 12%;
   }
 }
 @media screen and (max-width: 768px) {
-  .main-buscador .navbar .container-fluid .formulario-buscador .btn {
+  .main-buscador .navbar .container-fluid .formulario-buscador .boton {
     width: 20%;
     font-size: 61%;
+    height: 8.5vh;
   }
 }
-.main-buscador .navbar .container-fluid .formulario-buscador .btn:hover {
+@media screen and (max-width: 480px) {
+  .main-buscador .navbar .container-fluid .formulario-buscador .boton {
+    height: 3.5vh;
+  }
+}
+.main-buscador .navbar .container-fluid .formulario-buscador .boton:hover {
   background-color: rgb(173, 173, 152);
   color: rgb(71, 71, 71);
 }
@@ -2551,15 +2620,20 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  height: 300vh;
+  height: 400vh;
   margin-top: 10vh;
   width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .main-buscador .box-inventario .inventario {
+    margin-top: 15vh;
+  }
 }
 @media screen and (max-width: 1024px) {
   .main-buscador .box-inventario .inventario {
     grid-template-columns: repeat(2, 50vw);
     grid-template-rows: repeat(10, 1fr);
-    margin-top: 2vh;
+    margin-top: 0vh;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2594,17 +2668,17 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
 }
 @media screen and (max-width: 1024px) {
   .main-buscador .box-inventario .inventario .borde {
-    height: 65vh;
+    height: 80vh;
   }
 }
 @media screen and (max-width: 768px) {
   .main-buscador .box-inventario .inventario .borde {
-    height: 110vh;
+    height: 90vh;
   }
 }
 @media screen and (max-width: 480px) {
   .main-buscador .box-inventario .inventario .borde {
-    height: 66vh;
+    height: 75vh;
   }
 }
 @media screen and (max-width: 320px) {
@@ -2617,40 +2691,66 @@ body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
   transition: 0.3s;
 }
 .main-buscador .box-inventario .inventario .borde .productos {
-  scale: 70%;
+  width: 21vw;
+  height: 69vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
+}
+@media screen and (max-width: 1024px) {
+  .main-buscador .box-inventario .inventario .borde .productos {
+    width: 36vw;
+    height: 74vh;
+  }
 }
 @media screen and (max-width: 768px) {
   .main-buscador .box-inventario .inventario .borde .productos {
-    scale: 70%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   .main-buscador .box-inventario .inventario .borde .productos {
-    scale: 77%;
+    width: 80vw;
+    height: 67vh;
   }
 }
 @media screen and (max-width: 320px) {
   .main-buscador .box-inventario .inventario .borde .productos {
-    scale: 60%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 .main-buscador .box-inventario .inventario .borde .mas {
   position: absolute;
-  margin-top: 46vh;
+  margin-top: 58vh;
+  font-size: 110%;
 }
 @media screen and (max-width: 1200px) {
   .main-buscador .box-inventario .inventario .borde .mas {
-    margin-top: 41vh;
+    margin-top: 60vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main-buscador .box-inventario .inventario .borde .mas {
+    margin-top: 65vh;
   }
 }
 @media screen and (max-width: 768px) {
   .main-buscador .box-inventario .inventario .borde .mas {
-    margin-top: 50vh;
+    margin-top: 65vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-buscador .box-inventario .inventario .borde .mas {
+    margin-top: 60vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main-buscador .box-inventario .inventario .borde .mas {
+    margin-top: 56vh;
   }
 }
 .main-buscador .box-inventario .inventario .borde .mas .adicional {
-  font-size: 120%;
+  font-size: 11 0%;
 }
 @media screen and (max-width: 768px) {
   .main-buscador .box-inventario .inventario .borde .mas .adicional {

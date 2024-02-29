@@ -1,22 +1,26 @@
 /*MAIN*/
 .main-buscador {
-    height: 360vh;
+    height: 460vh;
     background-color: nth($list: $colores, $n:5 );
     padding-top: 30vh;
     max-width: 100%;
     @include notebook{
         padding-top: 25vh;
-        height: 330vh;
+        height: 440vh;
     }
     @include tablet {
         padding-top: 27vh;
-        height: 695vh;
+        height: 850vh;
     }
     @include mobile {
-        padding-top: 12vh;
-        height: 1160vh;
+        padding-top: 13vh;
+        height: 1040vh;
     }
     @include s-mobile {
+        padding-top: 14vh;
+        height: 1480vh;
+    }
+    @include vs-mobile {
         padding-top: 14vh;
         height: 1350vh;
     }
@@ -33,7 +37,7 @@
         @include mobile{
             margin-top: 18vh;
             padding: 0;
-            z-index: 2;
+            
         }
         @include s-mobile{
             display: flex;
@@ -42,6 +46,7 @@
             margin-top: 70vh;
             margin-left: 4vw;
             width: 94vw;
+            z-index: 2;
         }
         &:hover {
             width: 74vw;
@@ -64,28 +69,38 @@
                         height: 6vh;
                     }
                     @include mobile{
-                        height: 2.5vh;
+                        height: 8.5vh;
+                    }
+                    @include s-mobile{
+                        height:3.5vh;
                         font-size: 61%;
+                        
                     }
                     &:focus {
                         background-color: nth($list: $colores, $n:4 );
                         }
                     }
-                    .btn {
+                    .boton {
                         border-radius: 0;
-                        border-top: none;
                         border-bottom: none;
+                        border-top: none;
+                        border-left: none;
                         border-color: nth($list: $colores, $n:2 );
                         background-color: nth($list: $colores, $n:1 ) ;
                         width: 10%;
                         font-size: 80%;
                         color: nth($list: $colores, $n: 2);
+                        height: 7vh;
                         @include notebook{
                             width: 12%;
                         }
                         @include mobile{
                             width: 20%;
                             font-size: 61%;
+                            height: 8.5vh;
+                        }
+                        @include s-mobile{
+                            height: 3.5vh;
                         }
                         &:hover {
                             background-color: nth($list: $colores, $n:3 ) ;
@@ -104,16 +119,16 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows:repeat(5, 1fr) ;
-            height: 300vh;
+            height: 400vh;
             margin-top: 10vh;
             width: 100%;
             @include notebook {
-                
+                margin-top: 15vh;
             }
             @include tablet{
                 grid-template-columns:repeat(2, 50vw);
                 grid-template-rows: repeat(10, 1fr);
-                margin-top: 2vh;
+                margin-top: 0vh;
             }
             @include mobile {
                 grid-template-columns:repeat(2, 50vw);
@@ -137,13 +152,13 @@
                     height: 50vh;
                 }
                 @include tablet{
-                    height:65vh ;
+                    height:80vh;
                 }
                 @include mobile {
-                    height:110vh ;
+                    height:90vh ;
                 }
                 @include s-mobile{
-                    height: 66vh;
+                    height: 75vh;
                 }
                 @include vs-mobile{
                     height: 66vh;
@@ -153,31 +168,49 @@
                     transition: 0.3s;
                 }
                 .productos{
-                    scale: 70%;
+                    width: 21vw;
+                    height: 69vh;
                     box-shadow: 4px 4px 10px 0px rgba(117,113,113,0.61);
                     @include notebook {
                     }
+                    @include tablet{
+                        width: 36vw;
+                        height: 74vh;
+                    }
                     @include mobile{
-                        scale: 70%;
+                        width: 29vw;
+                        height: 76vh;
                     }
                     @include s-mobile{
-                        scale: 77%;
+                        width: 80vw;
+                        height: 67vh;
                     }
                     @include vs-mobile{
-                        scale: 60%;
+                        height: 62vh;
+                        width: 87vw;
                     }
                 }
                 .mas{
                     position: absolute;
-                    margin-top: 46vh;
+                    margin-top:58vh;
+                    font-size: 110%;
                     @include notebook {
-                        margin-top: 41vh;
+                        margin-top: 60vh;
+                    }
+                    @include tablet {
+                        margin-top: 65vh;
                     }
                     @include mobile{
-                        margin-top: 50vh;
+                        margin-top: 65vh;
+                    }
+                    @include s-mobile{
+                        margin-top: 60vh;
+                    }
+                    @include vs-mobile{
+                        margin-top: 56vh;
                     }
                     .adicional{
-                        font-size: 120%;
+                        font-size: 11   0%;
                         @include mobile{
                             font-size: 100%;
                         }
