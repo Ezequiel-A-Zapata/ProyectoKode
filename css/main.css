@@ -819,7 +819,14 @@ body .main-coleccion {
 @media screen and (max-width: 480px) {
   body .main-coleccion {
     justify-content: center;
-    height: 1455vh;
+    height: 1280vh;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .main-coleccion {
+    justify-content: center;
+    height: 1425vh;
     margin-left: 0;
   }
 }
@@ -833,10 +840,10 @@ body .main-coleccion .box-clasificacion {
   background-color: beige;
   position: fixed;
   box-shadow: 0px 2px 10px 0px rgb(108, 108, 108);
+  justify-content: start;
 }
 body .main-coleccion .box-clasificacion p {
-  margin-left: 8vw;
-  margin-top: 1vh;
+  margin-top: 1.5vh;
   position: absolute;
   opacity: 0%;
 }
@@ -855,6 +862,7 @@ body .main-coleccion .box-clasificacion p {
     position: fixed;
     z-index: 1;
     -webkit-transition: 0.7s;
+    justify-content: center;
   }
   body .main-coleccion .box-clasificacion:hover {
     height: 25vh;
@@ -877,7 +885,7 @@ body .main-coleccion .clasificacion {
   padding: 0;
   margin-bottom: 0;
   gap: 5vh;
-  margin-left: 2vw;
+  margin-left: 3vw;
 }
 @media screen and (max-width: 480px) {
   body .main-coleccion .clasificacion {
@@ -928,7 +936,6 @@ body .box-coleccion .remeras {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
   /*REMERA PRINCIPAL*/
   /*REMERAS SECUNDARIAS*/
 }
@@ -955,7 +962,15 @@ body .box-coleccion .remeras {
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras {
     justify-content: center;
-    height: 290vh;
+    height: 250vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .remeras {
+    justify-content: center;
+    height: 280vh;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(1, 1fr);
   }
@@ -984,32 +999,45 @@ body .box-coleccion .remeras .r-principal {
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-principal {
     width: 100vw;
-    height: 67vh;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .remeras .r-principal {
+    width: 100vw;
+    height: 65vh;
   }
 }
 body .box-coleccion .remeras .r-principal .remera-0 {
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
-  scale: 100%;
+  width: 21vw;
+  height: 69vh;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .remeras .r-principal .remera-0 {
-    scale: 90%;
+    margin-top: 5vh;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .remeras .r-principal .remera-0 {
-    scale: 55%;
+    margin-top: 0;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-principal .remera-0 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .remeras .r-principal .remera-0 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .remeras .r-principal .remera-0:hover {
@@ -1062,37 +1090,50 @@ body .box-coleccion .remeras .r-secundario {
     margin-top: 0vh;
   }
 }
+@media screen and (max-width: 480px) {
+  body .box-coleccion .remeras .r-secundario {
+    grid-column: 1/4;
+    width: 100vw;
+    height: 60vh;
+    margin-top: 0vh;
+  }
+}
 @media screen and (max-width: 320px) {
   body .box-coleccion .remeras .r-secundario {
     margin-top: 0vh;
     grid-column: 1/4;
     width: 100vw;
-    height: 67vh;
+    height: 65vh;
   }
 }
 body .box-coleccion .remeras .r-secundario .remera-1 {
-  scale: 62%;
+  width: 14.7vw;
+  height: 47vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .remeras .r-secundario .remera-1 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .remeras .r-secundario .remera-1 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-secundario .remera-1 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .remeras .r-secundario .remera-1 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .remeras .r-secundario .remera-1:hover {
@@ -1121,28 +1162,33 @@ body .box-coleccion .remeras .r-secundario .REMERA1 {
   }
 }
 body .box-coleccion .remeras .r-secundario .remera-2 {
-  scale: 62%;
+  width: 14.7vw;
+  height: 47vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .remeras .r-secundario .remera-2 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .remeras .r-secundario .remera-2 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-secundario .remera-2 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .remeras .r-secundario .remera-2 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .remeras .r-secundario .remera-2:hover {
@@ -1150,28 +1196,33 @@ body .box-coleccion .remeras .r-secundario .remera-2:hover {
   transition: 0.3s;
 }
 body .box-coleccion .remeras .r-secundario .remera-3 {
-  scale: 62%;
+  width: 14.7vw;
+  height: 47vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .remeras .r-secundario .remera-3 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .remeras .r-secundario .remera-3 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .remeras .r-secundario .remera-3 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .remeras .r-secundario .remera-3 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .remeras .r-secundario .remera-3:hover {
@@ -1209,7 +1260,16 @@ body .box-coleccion .camisas {
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas {
     justify-content: center;
-    height: 290vh;
+    height: 250vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .camisas {
+    justify-content: center;
+    height: 280vh;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(1, 1fr);
     margin-top: 0;
@@ -1239,32 +1299,43 @@ body .box-coleccion .camisas .c-principal {
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-principal {
     width: 100vw;
-    height: 67vh;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .camisas .c-principal {
+    width: 100vw;
+    height: 65vh;
   }
 }
 body .box-coleccion .camisas .c-principal .camisa-0 {
-  scale: 100%;
+  width: 21vw;
+  height: 69vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .camisas .c-principal .camisa-0 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .camisas .c-principal .camisa-0 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-principal .camisa-0 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .camisas .c-principal .camisa-0 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .camisas .c-principal .camisa-0:hover {
@@ -1317,33 +1388,46 @@ body .box-coleccion .camisas .c-secundario {
   body .box-coleccion .camisas .c-secundario {
     grid-column: 1/4;
     width: 100vw;
-    height: 67vh;
+    height: 60vh;
+    margin-top: 0vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .camisas .c-secundario {
+    grid-column: 1/4;
+    width: 100vw;
+    height: 65vh;
     margin-top: 0vh;
   }
 }
 body .box-coleccion .camisas .c-secundario .camisa-1 {
-  scale: 62%;
+  width: 14.7vw;
+  height: 47vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .camisas .c-secundario .camisa-1 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .camisas .c-secundario .camisa-1 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-secundario .camisa-1 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .camisas .c-secundario .camisa-1 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .camisas .c-secundario .camisa-1:hover {
@@ -1372,28 +1456,33 @@ body .box-coleccion .camisas .c-secundario .CAMISA1 {
   }
 }
 body .box-coleccion .camisas .c-secundario .camisa-2 {
-  scale: 62%;
+  width: 14.7vw;
+  height: 47vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .camisas .c-secundario .camisa-2 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .camisas .c-secundario .camisa-2 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-secundario .camisa-2 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .camisas .c-secundario .camisa-2 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .camisas .c-secundario .camisa-2:hover {
@@ -1401,28 +1490,33 @@ body .box-coleccion .camisas .c-secundario .camisa-2:hover {
   transition: 0.3s;
 }
 body .box-coleccion .camisas .c-secundario .camisa-3 {
-  scale: 62%;
+  width: 14.7vw;
+  height: 47vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .camisas .c-secundario .camisa-3 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .camisas .c-secundario .camisa-3 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .camisas .c-secundario .camisa-3 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .camisas .c-secundario .camisa-3 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .camisas .c-secundario .camisa-3:hover {
@@ -1460,7 +1554,16 @@ body .box-coleccion .pantalones {
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones {
     justify-content: center;
-    height: 290vh;
+    height: 250vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .box-coleccion .pantalones {
+    justify-content: center;
+    height: 280vh;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(1, 1fr);
     margin-top: 0;
@@ -1491,32 +1594,43 @@ body .box-coleccion .pantalones .p-principal {
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-principal {
     width: 100vw;
-    height: 67vh;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .pantalones .p-principal {
+    width: 100vw;
+    height: 65vh;
   }
 }
 body .box-coleccion .pantalones .p-principal .pantalon-0 {
-  scale: 100%;
+  width: 21vw;
+  height: 69vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .pantalones .p-principal .pantalon-0 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .pantalones .p-principal .pantalon-0 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-principal .pantalon-0 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .pantalones .p-principal .pantalon-0 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .pantalones .p-principal .pantalon-0:hover {
@@ -1570,32 +1684,45 @@ body .box-coleccion .pantalones .p-secundario {
     grid-column: 1/4;
     margin-top: 0vh;
     width: 100vw;
-    height: 67vh;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .pantalones .p-secundario {
+    grid-column: 1/4;
+    margin-top: 0vh;
+    width: 100vw;
+    height: 65vh;
   }
 }
 body .box-coleccion .pantalones .p-secundario .pantalon-1 {
-  scale: 62%;
+  width: 14.7vw;
+  height: 47vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-1 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-1 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-1 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-1 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .pantalones .p-secundario .pantalon-1:hover {
@@ -1624,28 +1751,33 @@ body .box-coleccion .pantalones .p-secundario .PANTALON1 {
   }
 }
 body .box-coleccion .pantalones .p-secundario .pantalon-2 {
-  scale: 62%;
+  width: 14.7vw;
+  height: 47vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-2 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-2 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-2 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-2 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .pantalones .p-secundario .pantalon-2:hover {
@@ -1653,28 +1785,33 @@ body .box-coleccion .pantalones .p-secundario .pantalon-2:hover {
   transition: 0.3s;
 }
 body .box-coleccion .pantalones .p-secundario .pantalon-3 {
-  scale: 62%;
+  width: 14.7vw;
+  height: 47vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-3 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-3 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-3 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .pantalones .p-secundario .pantalon-3 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .pantalones .p-secundario .pantalon-3:hover {
@@ -1712,7 +1849,16 @@ body .box-coleccion .bermudas {
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas {
     justify-content: center;
-    height: 290vh;
+    height: 250vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .bermudas {
+    justify-content: center;
+    height: 280vh;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(1, 1fr);
     margin-top: 0;
@@ -1743,32 +1889,43 @@ body .box-coleccion .bermudas .b-principal {
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-principal {
     width: 100vw;
-    height: 67vh;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .bermudas .b-principal {
+    width: 100vw;
+    height: 65vh;
   }
 }
 body .box-coleccion .bermudas .b-principal .bermuda-0 {
-  scale: 100%;
+  width: 21vw;
+  height: 69vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .bermudas .b-principal .bermuda-0 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .bermudas .b-principal .bermuda-0 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-principal .bermuda-0 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .bermudas .b-principal .bermuda-0 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .bermudas .b-principal .bermuda-0:hover {
@@ -1822,32 +1979,45 @@ body .box-coleccion .bermudas .b-secundario {
     grid-column: 1/4;
     margin-top: 0vh;
     width: 100vw;
-    height: 67vh;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .bermudas .b-secundario {
+    grid-column: 1/4;
+    margin-top: 0vh;
+    width: 100vw;
+    height: 65vh;
   }
 }
 body .box-coleccion .bermudas .b-secundario .bermuda-1 {
-  scale: 62%;
+  width: 14.7vw;
+  height: 47vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-1 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-1 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-1 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-1 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .bermudas .b-secundario .bermuda-1:hover {
@@ -1876,28 +2046,33 @@ body .box-coleccion .bermudas .b-secundario .BERMUDA1 {
   }
 }
 body .box-coleccion .bermudas .b-secundario .bermuda-2 {
-  scale: 62%;
+  width: 14.7vw;
+  height: 47vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-2 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-2 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-2 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-2 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .bermudas .b-secundario .bermuda-2:hover {
@@ -1905,28 +2080,33 @@ body .box-coleccion .bermudas .b-secundario .bermuda-2:hover {
   transition: 0.3s;
 }
 body .box-coleccion .bermudas .b-secundario .bermuda-3 {
-  scale: 62%;
+  width: 14.7vw;
+  height: 47vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-3 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-3 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-3 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .bermudas .b-secundario .bermuda-3 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .bermudas .b-secundario .bermuda-3:hover {
@@ -1967,7 +2147,17 @@ body .box-coleccion .accesorios {
   body .box-coleccion .accesorios {
     margin-top: 0;
     justify-content: center;
-    height: 290vh;
+    height: 250vh;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .accesorios {
+    margin-top: 0;
+    justify-content: center;
+    height: 280vh;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(1, 1fr);
     margin-top: 0;
@@ -1998,32 +2188,43 @@ body .box-coleccion .accesorios .a-principal {
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-principal {
     width: 100vw;
-    height: 67vh;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .accesorios .a-principal {
+    width: 100vw;
+    height: 65vh;
   }
 }
 body .box-coleccion .accesorios .a-principal .accesorio-0 {
-  scale: 100%;
+  width: 21vw;
+  height: 69vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .accesorios .a-principal .accesorio-0 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .accesorios .a-principal .accesorio-0 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-principal .accesorio-0 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .accesorios .a-principal .accesorio-0 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .accesorios .a-principal .accesorio-0:hover {
@@ -2077,32 +2278,45 @@ body .box-coleccion .accesorios .a-secundario {
     grid-column: 1/4;
     margin-top: 0vh;
     width: 100vw;
-    height: 67vh;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .box-coleccion .accesorios .a-secundario {
+    grid-column: 1/4;
+    margin-top: 0vh;
+    width: 100vw;
+    height: 65vh;
   }
 }
 body .box-coleccion .accesorios .a-secundario .accesorio-1 {
-  scale: 62%;
+  width: 14.7vw;
+  height: 47vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-1 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-1 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-1 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
 @media screen and (max-width: 320px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-1 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .accesorios .a-secundario .accesorio-1:hover {
@@ -2131,28 +2345,33 @@ body .box-coleccion .accesorios .a-secundario .ACCESORIO1 {
   }
 }
 body .box-coleccion .accesorios .a-secundario .accesorio-2 {
-  scale: 62%;
+  width: 14.7vw;
+  height: 47vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-2 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-2 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-2 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-2 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .accesorios .a-secundario .accesorio-2:hover {
@@ -2160,28 +2379,33 @@ body .box-coleccion .accesorios .a-secundario .accesorio-2:hover {
   transition: 0.3s;
 }
 body .box-coleccion .accesorios .a-secundario .accesorio-3 {
-  scale: 62%;
+  width: 14.7vw;
+  height: 47vh;
   box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
   -webkit-transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-3 {
-    scale: 90%;
+    width: 36vw;
+    height: 74vh;
   }
 }
 @media screen and (max-width: 768px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-3 {
-    scale: 55%;
+    width: 29vw;
+    height: 76vh;
   }
 }
 @media screen and (max-width: 480px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-3 {
-    scale: 70%;
+    width: 64vw;
+    height: 56vh;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   body .box-coleccion .accesorios .a-secundario .accesorio-3 {
-    scale: 67%;
+    height: 62vh;
+    width: 87vw;
   }
 }
 body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
