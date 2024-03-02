@@ -293,6 +293,12 @@ body .header-main {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 768px) {
+  body .header-main {
+    background-image: url(../img/fondo-mobile3.jpg);
+    background-position: center;
+  }
+}
 body .header-main .header-general {
   display: flex;
   height: 27vh;
