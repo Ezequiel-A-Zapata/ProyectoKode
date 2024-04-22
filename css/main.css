@@ -14,6 +14,33 @@ html {
   overflow-x: hidden;
 }
 
+.d-none {
+  display: none;
+}
+
+.texto-prendas {
+  font-size: 64%;
+  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
+  margin-bottom: 5%;
+}
+
+.precio-prendas {
+  font-size: 75%;
+  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
+}
+
+.carrito-prendas {
+  height: 4vh;
+  width: 1.8vw;
+  border: none;
+  margin-left: 6vw;
+}
+.carrito-prendas img {
+  margin-top: 1vh;
+  height: 100%;
+  width: 100%;
+}
+
 body {
   max-width: 100%;
 }
@@ -22,6 +49,7 @@ body .header-general {
   height: 20vh;
   background-image: url(../img/imagen\ index.webp);
   width: 100vw;
+  max-width: 100%;
   position: fixed;
   background-position: top;
   background-size: cover;
@@ -44,7 +72,8 @@ body .header-general .nav-general {
   flex-direction: column;
   background-color: beige;
   z-index: 1;
-  width: 20%;
+  position: fixed;
+  width: 19%;
   align-items: center;
   margin-left: 3vw;
   height: 26vh;
@@ -119,7 +148,7 @@ body .header-general .nav-general:hover .menu-general {
   display: flex;
 }
 body .header-general .nav-general:hover .extra {
-  opacity: 0%;
+  display: none;
 }
 body .header-general .logo-general {
   text-decoration: none;
@@ -210,12 +239,12 @@ body .header-general .menu-general p:hover {
   }
 }
 body .box-buscador-general {
-  margin-left: 33%;
+  margin-left: 50vw;
   width: 30.5vw;
   -webkit-transition: 0.7s;
 }
 body .box-buscador-general:hover {
-  margin-left: 31%;
+  margin-left: 47vw;
   width: 33.5vw;
   transition: 0.7s;
 }
@@ -278,6 +307,45 @@ body .buscador-general p {
   body .buscador-general p {
     font-size: 61%;
   }
+}
+body .contenedorboton {
+  display: flex;
+  justify-content: end;
+  width: 10%;
+  position: absolute;
+  z-index: 2;
+  margin-left: 85%;
+}
+body .contenedorboton .botoncarrito {
+  height: 5vh;
+  width: 2.5vw;
+  margin-top: 5.8vh;
+  border-bottom: solid rgb(71, 71, 71) 0.1vh;
+  border-left: solid rgb(71, 71, 71) 0.1vh;
+  border-right: solid rgb(71, 71, 71) 0.1vh;
+  border-top: solid rgb(71, 71, 71) 0.1vh;
+  box-shadow: 0px 2px 10px 0px rgb(108, 108, 108);
+  -webkit-transition: 0.2s;
+}
+body .contenedorboton .botoncarrito:hover {
+  height: 5.3vh;
+  width: 2.6vw;
+}
+body .contenedorboton .botoncarrito .carritoimg {
+  height: 100%;
+  width: 100%;
+}
+body .contenedorboton .numerito {
+  display: flex;
+  justify-content: center;
+  margin-top: 9vh;
+  position: absolute;
+  color: aliceblue;
+  background-color: black;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-size: 67%;
 }
 
 body {
@@ -807,6 +875,7 @@ body .main-coleccion {
   justify-content: space-between;
   z-index: 1;
   max-width: 100vw;
+  /*CARRITO DESPLEGADO*/
   /*BOX DE CLASIFICACION*/
   /*PALABRAS DENTRO DEL BOX*/
 }
@@ -835,6 +904,153 @@ body .main-coleccion {
     height: 1425vh;
     margin-left: 0;
   }
+}
+body .main-coleccion .display {
+  display: none;
+}
+body .main-coleccion .contenedordesplegado {
+  display: flex;
+  justify-content: end;
+  width: 100vw;
+  z-index: 3;
+  position: fixed;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado {
+  display: block;
+  background-color: beige;
+  width: 19vw;
+  height: 66vh;
+  border-bottom: solid rgb(71, 71, 71) 0.1vh;
+  border-left: solid rgb(71, 71, 71) 0.1vh;
+  box-shadow: -1px 1px 5px 0px rgb(108, 108, 108);
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .flecha-carrito {
+  height: 4.5vh;
+  width: 2.1vw;
+  display: flex;
+  justify-content: center;
+  background-color: beige;
+  border: none;
+  padding-left: 3%;
+  padding-right: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  -webkit-transition: 0.2s;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .flecha-carrito:hover {
+  box-shadow: 0px 1px 0px 0px rgb(108, 108, 108);
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .flecha-carrito img {
+  height: 100%;
+  width: 100%;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .carrito-vacio {
+  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
+  font-size: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 53.5vh;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .item1 {
+  margin-left: 3%;
+  max-width: 100%;
+  height: 16vh;
+  margin-top: 1.5vh;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito {
+  background-color: white;
+  height: 100%;
+  display: flex;
+  width: 92%;
+  box-shadow: 0px 0px 3px 0px rgb(108, 108, 108);
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito {
+  display: flex;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito .img-carrito {
+  width: 5.8vw;
+  height: 93%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito .nombre-producto {
+  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
+  font-size: 70%;
+  width: 7vw;
+  margin-left: 1vw;
+  margin-top: 1vh;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito .precio-producto {
+  position: absolute;
+  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
+  font-size: 70%;
+  margin-left: 7.5vw;
+  margin-top: 4vh;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito .info-producto {
+  display: flex;
+  position: fixed;
+  margin-left: 6.5vw;
+  margin-top: 13vh;
+  width: 11vw;
+  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
+  font-size: 65%;
+  gap: 0.4vw;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito .info-producto .btn-restar {
+  width: 0.9vw;
+  height: 1.8vh;
+  font-size: 160%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: rgb(238, 238, 238);
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito .info-producto .btn-sumar {
+  width: 0.9vw;
+  height: 1.8vh;
+  font-size: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: rgb(238, 238, 238);
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito .info-producto .subtotal-producto {
+  font-size: 115%;
+  margin-left: 0.5vw;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito .borrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.3vh;
+  width: 1.3vw;
+  border: none;
+  margin-top: 0.6vh;
+  margin-left: 1.3vw;
+  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
+  font-size: 70%;
+  background-color: rgb(238, 238, 238);
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .sec-total {
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  box-shadow: 0px -1px 5px 0px rgb(108, 108, 108);
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .sec-total .contenedor-total {
+  display: flex;
+  margin-top: 2.1vh;
+  width: 90%;
+  justify-content: space-between;
+  font-family: "fuente-logo";
+  font-size: 125%;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .sec-total .contenedor-total .total-texto {
+  margin-left: 7%;
 }
 body .main-coleccion .box-clasificacion {
   margin-top: 23%;
@@ -989,6 +1205,7 @@ body .box-coleccion .remeras .remera-item {
 body .box-coleccion .remeras .r-principal {
   grid-column: 1/4;
   height: 65vh;
+  align-items: end;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .remeras .r-principal {
@@ -1050,15 +1267,29 @@ body .box-coleccion .remeras .r-principal .remera-0:hover {
   scale: 103%;
   transition: 0.3s;
 }
-body .box-coleccion .remeras .r-principal .remera-0:hover .REMERA0 {
-  scale: 103%;
-  transition: 0.3s;
-}
 body .box-coleccion .remeras .r-principal .REMERA0 {
   display: flex;
   position: absolute;
-  margin-top: 58vh;
-  font-size: 110%;
+}
+body .box-coleccion .remeras .r-principal .REMERA0 .texto-prendas {
+  font-size: 70%;
+  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
+  margin-bottom: 5%;
+}
+body .box-coleccion .remeras .r-principal .REMERA0 .precio-prendas {
+  font-size: 80%;
+  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
+}
+body .box-coleccion .remeras .r-principal .REMERA0 .carrito-prendas {
+  height: 4vh;
+  width: 1.8vw;
+  border: none;
+  margin-left: 9vw;
+}
+body .box-coleccion .remeras .r-principal .REMERA0 .carrito-prendas img {
+  margin-top: 1vh;
+  height: 100%;
+  width: 100%;
 }
 @media screen and (max-width: 1200px) {
   body .box-coleccion .remeras .r-principal .REMERA0 {
@@ -1083,7 +1314,7 @@ body .box-coleccion .remeras .r-principal .REMERA0 {
 body .box-coleccion .remeras .r-secundario {
   height: 45vh;
   margin-top: 8vh;
-  position: relative;
+  align-items: end;
 }
 @media screen and (max-width: 1024px) {
   body .box-coleccion .remeras .r-secundario {
@@ -1154,8 +1385,6 @@ body .box-coleccion .remeras .r-secundario .remera-1:hover {
 body .box-coleccion .remeras .r-secundario .REMERA1 {
   display: flex;
   position: absolute;
-  margin-top: 40vh;
-  font-size: 110%;
 }
 @media screen and (max-width: 1200px) {
   body .box-coleccion .remeras .r-secundario .REMERA1 {
@@ -1176,74 +1405,6 @@ body .box-coleccion .remeras .r-secundario .REMERA1 {
   body .box-coleccion .remeras .r-secundario .REMERA1 {
     margin-top: 56vh;
   }
-}
-body .box-coleccion .remeras .r-secundario .remera-2 {
-  width: 14.7vw;
-  height: 47vh;
-  box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
-  -webkit-transition: 0.3s;
-}
-@media screen and (max-width: 1024px) {
-  body .box-coleccion .remeras .r-secundario .remera-2 {
-    width: 36vw;
-    height: 74vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  body .box-coleccion .remeras .r-secundario .remera-2 {
-    width: 29vw;
-    height: 76vh;
-  }
-}
-@media screen and (max-width: 480px) {
-  body .box-coleccion .remeras .r-secundario .remera-2 {
-    width: 80vw;
-    height: 67vh;
-  }
-}
-@media screen and (max-width: 320px) {
-  body .box-coleccion .remeras .r-secundario .remera-2 {
-    height: 62vh;
-    width: 87vw;
-  }
-}
-body .box-coleccion .remeras .r-secundario .remera-2:hover {
-  scale: 103%;
-  transition: 0.3s;
-}
-body .box-coleccion .remeras .r-secundario .remera-3 {
-  width: 14.7vw;
-  height: 47vh;
-  box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
-  -webkit-transition: 0.3s;
-}
-@media screen and (max-width: 1024px) {
-  body .box-coleccion .remeras .r-secundario .remera-3 {
-    width: 36vw;
-    height: 74vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  body .box-coleccion .remeras .r-secundario .remera-3 {
-    width: 29vw;
-    height: 76vh;
-  }
-}
-@media screen and (max-width: 480px) {
-  body .box-coleccion .remeras .r-secundario .remera-3 {
-    width: 80vw;
-    height: 67vh;
-  }
-}
-@media screen and (max-width: 320px) {
-  body .box-coleccion .remeras .r-secundario .remera-3 {
-    height: 62vh;
-    width: 87vw;
-  }
-}
-body .box-coleccion .remeras .r-secundario .remera-3:hover {
-  scale: 103%;
-  transition: 0.3s;
 }
 body .box-coleccion .camisas {
   margin-top: 15vh;

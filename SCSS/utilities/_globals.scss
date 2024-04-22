@@ -8,3 +8,26 @@ html {
     position: relative;
     overflow-x: hidden;
 }
+.d-none {
+    display: none;
+}
+.texto-prendas{
+    font-size: 64%;
+    font-family: "Neue-Helvetica","Helvetica","Arial","sans-serif" ;
+    margin-bottom: 5%;
+}
+.precio-prendas {
+    font-size:75% ;
+    font-family: "Neue-Helvetica","Helvetica","Arial","sans-serif" ;
+}
+.carrito-prendas{
+    height: 4vh;
+    width: 1.8vw;
+    border: none;
+    margin-left: 6vw;
+    img {
+        margin-top: 1vh;
+        height: 100%;
+        width: 100%;
+    }
+}

@@ -34,9 +34,31 @@
           <p>BUSCAR</p>
         </a>
       </div>
+      <div class="contenedorboton">
+      <button class="botoncarrito" id="botoncarrito" ><img class="carritoimg" src="../img/carrito.png" alt="carrito"></button>
+      <p class="numerito">5</p>
+      </div>
   </header>
   <!-- MAIN DE COLECCION -->
         <main class="main-coleccion">
+          <!-- CARRITO DESPLEGADO-->
+          <section class="display">
+            <div class="contenedordesplegado" id="contenedordesplegado">
+              <section class="carritodesplegado">
+                <button class="flecha-carrito"><img id="back-flecha" src="../img/flecha carrito.png" alt="flecha-carrito"></button>
+                <div class="carrito-vacio">TU CARRITO ESTA VACIO</div>
+                <div class="carrito-productos d-none"></div>
+                <!--REMERA-CARRITO-->
+                <!--COMPLETA CON JS-->
+              <section class="sec-total">
+                <div class="contenedor-total">
+                  <p class="total-texto">TOTAL:</p>
+                  <p id="carrito-total">$10</p>
+                </div>
+              </section>
+              </section>
+            </div>
+          </section>
           <!-- BOX DE CLASIFICACION -->
           <div class="box-clasificacion" >
             <p>__</p>
@@ -53,25 +75,46 @@
         <section class="box-coleccion">
           <!-- REMERAS -->
           <section class="remeras" for="remeras">
-            <div class="remera-item r-principal"><img src="../img/ropa KODE/remeras/REMERA0.jpg" class="remera-0"  alt="remera-blanca">
+            <!-- <div class="remera-item r-principal">
+              <img src="../img/ropa KODE/remeras/REMERA0.jpg" class="remera-0"  alt="remera-blanca">
               <div class="REMERA0">
-                <p>+</p>
+                <div> 
+                <p class="texto-prendas">REMERA BLANCA</p>
+                <p class="precio-prendas">$3000</p>
+                </div>
+                <button class="carrito-prendas"><img src="../img/carrito.png" alt="carrito"></button>
               </div>
             </div>
-            <div class="remera-item r-secundario"><img src="../img/ropa KODE/remeras/REMERA1.jpg" class="remera-1" alt="remera-azul">
+            <div class="remera-item r-secundario">
+              <img src="../img/ropa KODE/remeras/REMERA1.jpg" class="remera-1" alt="remera-azul">
               <div class="REMERA1">
-                <p>+</p>
+                <div>
+                <p class="texto-prendas">REMERA AZUL</p>
+                <p class="precio-prendas">$3000</p>
+                </div>
+                <button class="carrito-prendas"><img src="../img/carrito.png" alt="carrito"></button>
               </div>
             </div>
             <div class="remera-item r-secundario"><img src="../img/ropa KODE/remeras/REMERA2.jpg" class="remera-2" alt="remera-beige">
               <div class="REMERA1">
-                <p>+</p>
+                <div>
+                  <p class="texto-prendas">REMERA AZUL</p>
+                  <p class="precio-prendas">$3000</p>
+                  </div>
+                  <button class="carrito-prendas"><img src="../img/carrito.png" alt="carrito"></button>
+                </div>
               </div>
             </div>
             <div class="remera-item r-secundario"><img src="../img/ropa KODE/remeras/REMERA4.jpg" class="remera-3" alt="remera-celeste">
               <div class="REMERA1">
-                <p>+</p>
+                <div>
+                  <p class="texto-prendas">REMERA AZUL</p>
+                  <p class="precio-prendas">$3000</p>
+                  </div>
+                  <button class="carrito-prendas"><img src="../img/carrito.png" alt="carrito"></button>
+                </div>
               </div>
+            </div> -->
       </section>
       <!-- CAMISAS -->
       <section class="camisas" for="camisas">
@@ -181,5 +224,6 @@
           </div>
         </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="../JS/scripts.js"></script>
 </body>
 </html>
