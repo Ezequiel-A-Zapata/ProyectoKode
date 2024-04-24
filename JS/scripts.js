@@ -34,7 +34,7 @@ const productos = [
 
 const contenedorDesplegado = document.querySelector ("#contenedordesplegado");
 const btnCarrito =  document.querySelector ("#botoncarrito");
-const display = document.querySelector (".display");
+const display = document.querySelector (".d-none");
 const carritoDesplegado = document.querySelector (".carritodesplegado");
 const backFlecha = document.querySelector ("#back-flecha");
 const carritoVacio = document.querySelector (".carrito-vacio");
@@ -44,12 +44,12 @@ const numerito = document.querySelector (".numerito");
 
 actualizarCarrito();
 btnCarrito.addEventListener ("click",() => {
-    display.classList.toggle("display");
+    display.classList.toggle("d-none");
 })
 
 document.addEventListener("click", (event) => {
     if (event.target === backFlecha) {
-        display.classList.toggle ("display");
+        display.classList.toggle ("d-none");
         
     }
 })

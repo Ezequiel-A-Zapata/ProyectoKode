@@ -167,11 +167,11 @@ body{
             }
         }
         .box-buscador-general{
-            margin-left: 50vw;
+            margin-left: 48vw;
             width: 30.5vw;
             -webkit-transition: 0.7s;
             &:hover {
-                margin-left: 47vw;
+                margin-left: 45vw;
                 width: 33.5vw;
                 transition:0.7s ;
                 }
@@ -257,7 +257,7 @@ body{
                 margin-top: 9vh;
                 position: absolute;
                 color: aliceblue;
-                background-color: black;
+                background-color:nth($list: $colores, $n: 2 );
                 width: 15px;
                 height: 15px;
                 border-radius: 50%;
