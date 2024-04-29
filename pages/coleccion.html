@@ -45,9 +45,11 @@
           <section class="posicion d-none">
             <div class="contenedordesplegado" id="contenedordesplegado">
               <section class="carritodesplegado">
-                <button class="flecha-carrito"><img id="back-flecha" src="../img/flecha carrito.png" alt="flecha-carrito"></button>
+                  <button class="flecha-carrito"><img id="back-flecha" src="../img/flecha carrito.png" alt="flecha-carrito"></button>
+                  <button class="borrar-todo" id="borrar-todo">LIMPIAR</button>
                 <div class="carrito-vacio">TU CARRITO ESTA VACIO</div>
-                <div class="carrito-productos d-none"></div>
+                <div class="carrito-productos d-none">
+                </div>
                 <!--REMERA-CARRITO-->
                 <!--COMPLETA CON JS-->
               <section class="sec-total">
@@ -63,61 +65,22 @@
           <div class="box-clasificacion" >
             <p>__</p>
           <ul class="clasificacion">
-            <li><a id="remeras-id">REMERAS</a></li>
-            <li><a id="camisas-id">CAMISAS</a></li>
-            <li><a id="pantalones-id">PANTALONES</a></li>
-            <li><a id="bermudas-id">BERMUDAS</a></li>
-            <li><a id="accesorios-id">ACCESORIOS</a></li>
+            <li><a href="#remeras-id" >REMERAS</a></li>
+            <li><a href="#camisas-id">CAMISAS</a></li>
+            <li><a href="#pantalones-id" >PANTALONES</a></li>
+            <li><a href="#bermudas-id">BERMUDAS</a></li>
+            <li><a href="#accesorios-id">ACCESORIOS</a></li>
         </ul>
         </div>
         <!-- FIN DEL BOX DE CLASIFICACION -->
         <!-- BOX DE COLECCION -->
         <section class="box-coleccion">
           <!-- REMERAS -->
-          <section class="remeras" for="remeras">
-            <!-- <div class="remera-item r-principal">
-              <img src="../img/ropa KODE/remeras/REMERA0.jpg" class="remera-0"  alt="remera-blanca">
-              <div class="REMERA0">
-                <div> 
-                <p class="texto-prendas">REMERA BLANCA</p>
-                <p class="precio-prendas">$3000</p>
-                </div>
-                <button class="carrito-prendas"><img src="../img/carrito.png" alt="carrito"></button>
-              </div>
-            </div>
-            <div class="remera-item r-secundario">
-              <img src="../img/ropa KODE/remeras/REMERA1.jpg" class="remera-1" alt="remera-azul">
-              <div class="REMERA1">
-                <div>
-                <p class="texto-prendas">REMERA AZUL</p>
-                <p class="precio-prendas">$3000</p>
-                </div>
-                <button class="carrito-prendas"><img src="../img/carrito.png" alt="carrito"></button>
-              </div>
-            </div>
-            <div class="remera-item r-secundario"><img src="../img/ropa KODE/remeras/REMERA2.jpg" class="remera-2" alt="remera-beige">
-              <div class="REMERA1">
-                <div>
-                  <p class="texto-prendas">REMERA AZUL</p>
-                  <p class="precio-prendas">$3000</p>
-                  </div>
-                  <button class="carrito-prendas"><img src="../img/carrito.png" alt="carrito"></button>
-                </div>
-              </div>
-            </div>
-            <div class="remera-item r-secundario"><img src="../img/ropa KODE/remeras/REMERA4.jpg" class="remera-3" alt="remera-celeste">
-              <div class="REMERA1">
-                <div>
-                  <p class="texto-prendas">REMERA AZUL</p>
-                  <p class="precio-prendas">$3000</p>
-                  </div>
-                  <button class="carrito-prendas"><img src="../img/carrito.png" alt="carrito"></button>
-                </div>
-              </div>
-            </div> -->
+          <section class="remeras" id="remeras-id">
+            <!-- RELLENA CON JS-->
       </section>
       <!-- CAMISAS -->
-      <section class="camisas" for="camisas">
+      <section class="camisas" id="camisas-id">
         <div class="camisa-item c-principal "><img src="../img/ropa KODE/camisas/CAMISA0.jpg" class="camisa-0" alt="camisa-blanca-rayada">
           <div class="CAMISA0">
             <p>+</p>
@@ -128,19 +91,19 @@
             <p>+</p>
           </div>
         </div>
-        <div class="camisa-item c-secundario"><img src="../img/ropa KODE/camisas/CAMISA2.jpg" class="camisa-2" alt="camisa-rayada-negra">
+        <div class="camisa-item c-secundario"><img src="../img/ropa KODE/camisas/CAMISA2.jpg" class="camisa-1" alt="camisa-rayada-negra">
           <div class="CAMISA1">
             <p>+</p>
           </div>
         </div>
-        <div class="camisa-item c-secundario"><img src="../img/ropa KODE/camisas/CAMISA3.jpg" class="camisa-3" alt="camisa-verde-agua">
+        <div class="camisa-item c-secundario"><img src="../img/ropa KODE/camisas/CAMISA3.jpg" class="camisa-1" alt="camisa-verde-agua">
           <div class="CAMISA1">
             <p>+</p>
           </div>
         </div>
       </section>
       <!-- PANTALONES -->
-      <section class="pantalones" for="pantalones">
+      <section class="pantalones" id="pantalones-id">
         <div class="pantalon-item p-principal"><img src="../img/ropa KODE/pantalones/PANTALON0.jpg" class="pantalon-0" alt="pantalon-azul">
           <div class="PANTALON0">
             <p>+</p>
@@ -151,12 +114,12 @@
             <p>+</p>
           </div>
         </div>
-        <div class="pantalon-item p-secundario"><img src="../img/ropa KODE/pantalones/PANTALON2.jpg"class="pantalon-2" alt="pantalon-blanco">
+        <div class="pantalon-item p-secundario"><img src="../img/ropa KODE/pantalones/PANTALON2.jpg"class="pantalon-1" alt="pantalon-blanco">
           <div class="PANTALON1">
             <p>+</p>
           </div>
         </div>
-        <div class="pantalon-item p-secundario"><img src="../img/ropa KODE/pantalones/PANTALON3.jpg"class="pantalon-3" alt="pantalon-azul2">
+        <div class="pantalon-item p-secundario"><img src="../img/ropa KODE/pantalones/PANTALON3.jpg"class="pantalon-1" alt="pantalon-azul2">
           <div class="PANTALON1">
             <p>+</p>
           </div>
@@ -164,7 +127,7 @@
         </div>
       </section>
       <!-- BERMUDAS -->
-      <section class="bermudas" for="bermudas">
+      <section class="bermudas" id="bermudas-id">
         <div class="bermudas-item b-principal"><img src="../img/ropa KODE/bermudas/BERMUDAS0.jpg" class="bermuda-0" alt="bermuda-azul">
           <div class="BERMUDA0">
             <p>+</p>
@@ -175,19 +138,19 @@
             <p>+</p>
           </div>
         </div>
-        <div class="bermudas-item b-secundario"><img src="../img/ropa KODE/bermudas/BERMUDAS2.jpg" class="bermuda-2" alt="bermuda-blanca">
+        <div class="bermudas-item b-secundario"><img src="../img/ropa KODE/bermudas/BERMUDAS2.jpg" class="bermuda-1" alt="bermuda-blanca">
           <div class="BERMUDA1">
             <p>+</p>
           </div>
         </div>
-        <div class="bermudas-item b-secundario"><img src="../img/ropa KODE/bermudas/BERMUDAS3.jpg" class="bermuda-3" alt="bermuda-negra-con-blanco">
+        <div class="bermudas-item b-secundario"><img src="../img/ropa KODE/bermudas/BERMUDAS3.jpg" class="bermuda-1" alt="bermuda-negra-con-blanco">
           <div class="BERMUDA1">
             <p>+</p>
           </div>
         </div>
       </section>
       <!-- ACCESORIOS -->
-      <section class="accesorios" for="accesorios">
+      <section class="accesorios" id="accesorios-id">
         <div class="accesorio-item a-principal"><img src="../img/ropa KODE/accesorios/ACCESORIO0.jpg" class="accesorio-0" alt="gorro-blanco-y-negro">
           <div class="ACCESORIO0">
             <p>+</p>
@@ -198,12 +161,12 @@
             <p>+</p>
           </div>
         </div>
-        <div class="accesorio-item a-secundario"><img src="../img/ropa KODE/accesorios/ACCESORIO2.jpg" class="accesorio-2" alt="gorro-verde-y-blanco">
+        <div class="accesorio-item a-secundario"><img src="../img/ropa KODE/accesorios/ACCESORIO2.jpg" class="accesorio-1" alt="gorro-verde-y-blanco">
           <div class="ACCESORIO1">
             <p>+</p>
           </div>
         </div>
-        <div class="accesorio-item a-secundario"><img src="../img/ropa KODE/accesorios/ACCESORIO3.jpg" class="accesorio-3" alt="gorra-azul">
+        <div class="accesorio-item a-secundario"><img src="../img/ropa KODE/accesorios/ACCESORIO3.jpg" class="accesorio-1" alt="gorra-azul">
           <div class="ACCESORIO1">
             <p>+</p>
           </div>

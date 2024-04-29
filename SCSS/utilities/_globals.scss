@@ -7,6 +7,14 @@ html {
     max-width: 100%;
     position: relative;
     overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 11px;
+        background-color: nth($list: $colores, $n:1 );
+    }
+    &::-webkit-scrollbar-thumb {
+        background: gray;
+        border-radius: 7px;
+    }
 }
 .d-none {
     display: none;

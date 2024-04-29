@@ -1,36 +1,10 @@
 
-
+fetch("../JS/productos.json")
+.then(response=>response.json())
+.then(data=> agregarProductos(data))
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 console.log (carrito);
-
-const productos = [
-    {
-        titulo: "REMERA BLANCA",
-        precio: 3000,
-        img: "../img/ropa KODE/remeras/REMERA0.jpg",
-        posicion: "principal",
-    },
-    {
-        titulo: "REMERA AZUL",
-        precio: 3200,
-        img:"../img/ropa KODE/remeras/REMERA1.jpg",
-        posicion:"secundaria",
-    }, 
-    {
-        titulo:"REMERA BEIGE",
-        precio: 3300,
-        img: "../img/ropa KODE/remeras/REMERA2.jpg",
-        posicion:"secundaria",
-    },
-    {
-        titulo: "REMERA CELESTE",
-        precio: 3400,
-        img:"../img/ropa KODE/remeras/REMERA4.jpg",
-        posicion:"secundaria",
-    }
-]
-
 
 const contenedorDesplegado = document.querySelector ("#contenedordesplegado");
 const btnCarrito =  document.querySelector ("#botoncarrito");
@@ -41,8 +15,10 @@ const carritoVacio = document.querySelector (".carrito-vacio");
 const carritoProductos =document.querySelector(".carrito-productos");
 const carritoTotal = document.querySelector ("#carrito-total");
 const numerito = document.querySelector (".numerito");
+const borrarTodo = document.querySelector ("#borrar-todo");
 
 actualizarCarrito();
+
 btnCarrito.addEventListener ("click",() => {
     display.classList.toggle("d-none");
 })
@@ -52,10 +28,16 @@ document.addEventListener("click", (event) => {
         display.classList.toggle ("d-none");
         
     }
+});
+document.addEventListener("click", (event) => {
+    if (event.target === borrarTodo) {
+        carrito =[];
+        actualizarCarrito();
+    }
 })
 
 
-
+function agregarProductos (productos) {
 productos.forEach ((producto) => {
     const remeras = document.querySelector (".remeras");
     const btnAgregar =document.createElement("button");
@@ -102,6 +84,7 @@ productos.forEach ((producto) => {
         remeras.append(remeraSecundaria);
     }
 });
+}
 
 
 function actualizarCarrito () {
@@ -116,25 +99,21 @@ function actualizarCarrito () {
         carritoProductos.innerHTML="";
         
         carrito.forEach (producto => {
-        const section = document.createElement ("section");
-        section.classList.add("item1");
-
-        const divRemeraCarrito = document.createElement ("div");
-        divRemeraCarrito.classList.add("remera-carrito");
-
-        const contImgCarrito = document.createElement ("div");
-        contImgCarrito.classList.add("cont-img-carrito");
-        contImgCarrito.innerHTML = `
-        <img class="img-carrito" src="${producto.img}" alt="remeracarrito1">
-        <p class="nombre-producto">${producto.titulo}</p>
-        <div class="precio-producto">$${producto.precio}</div>`;
         
+        const section = document.createElement ("section");
+        section.classList.add("item2");
+        section.innerHTML = `<img src="${producto.img}" class="remeracarrito2" alt="remera-blanca">`;
         
         const infoProductos = document.createElement ("div");
-        infoProductos.classList.add ("info-producto");
-        infoProductos.innerHTML =`<p>CANTIDAD: ${producto.cantidad}</p>`;
-        
-        
+        infoProductos.classList.add ("info-productos");
+        infoProductos.innerHTML = `
+        <p class="nombre-producto">${producto.titulo}</p>
+        <p class="precio-producto">$${producto.precio}</p>`;
+
+        const divBottom = document.createElement ("div");
+        divBottom.classList.add ("bottom");
+        divBottom.innerHTML = `<p class="cantidad-producto">CANTIDAD: ${producto.cantidad}</p>`;
+
         const btnRestar = document.createElement("button");
         btnRestar.classList.add ("btn-restar");
         btnRestar.innerText = "-";
@@ -149,15 +128,14 @@ function actualizarCarrito () {
             sumarDelCarrito (producto);
         });
 
-        const precio = document.createElement("p");
-        precio.classList.add ("subtotal-producto");
-        precio.innerText=`$${producto.precio * producto.cantidad}`;
+        const subTotal = document.createElement ("p");
+        subTotal.classList.add ("subtotal");;
+        subTotal.innerText = `$${producto.precio * producto.cantidad}`;
 
-        infoProductos.append(btnRestar);
-        infoProductos.append(btnSumar);
-        infoProductos.append (precio);
-        contImgCarrito.append(infoProductos);
-
+        divBottom.append (btnRestar);
+        divBottom.append (btnSumar);
+        divBottom.append (subTotal);
+        infoProductos.append (divBottom);
 
         const btnBorrar = document.createElement ("button");
         btnBorrar.classList.add ("borrar");
@@ -165,9 +143,8 @@ function actualizarCarrito () {
         btnBorrar.addEventListener("click", () => { 
             borrarDelCarrito (producto); 
         });
-        contImgCarrito.append (btnBorrar);
-        divRemeraCarrito.append(contImgCarrito);
-        section.append (divRemeraCarrito);
+        section.append (infoProductos);
+        section.append (btnBorrar);
         carritoProductos.append(section);
         }); 
     }
@@ -221,7 +198,4 @@ function actualizarTotal()  {
     const total = carrito.reduce((acc,prod) => acc + (prod.precio * prod.cantidad), 0);
     return total; 
 }
-
-
-
 

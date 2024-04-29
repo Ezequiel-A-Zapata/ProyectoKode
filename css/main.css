@@ -13,6 +13,14 @@ html {
   position: relative;
   overflow-x: hidden;
 }
+html::-webkit-scrollbar {
+  width: 11px;
+  background-color: beige;
+}
+html::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 7px;
+}
 
 .d-none {
   display: none;
@@ -913,34 +921,69 @@ body .main-coleccion .contenedordesplegado {
   z-index: 2;
 }
 body .main-coleccion .contenedordesplegado .carritodesplegado {
+  overflow-y: scroll;
+  overflow-x: hidden;
   display: block;
   background-color: beige;
   width: 19vw;
-  height: auto;
+  height: 66vh;
   border-bottom: solid rgb(71, 71, 71) 0.1vh;
   border-left: solid rgb(71, 71, 71) 0.1vh;
   border-right: solid rgb(71, 71, 71) 0.1vh;
   box-shadow: -1px 1px 5px 0px rgb(108, 108, 108);
 }
+body .main-coleccion .contenedordesplegado .carritodesplegado::-webkit-scrollbar {
+  width: 4px;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado::-webkit-scrollbar-thumb {
+  background: rgb(173, 173, 152);
+  border-radius: 7px;
+}
 body .main-coleccion .contenedordesplegado .carritodesplegado .flecha-carrito {
-  height: 4.5vh;
-  width: 2.1vw;
+  margin-top: 1vh;
+  margin-left: 0.4vw;
+  box-shadow: -1px 1px 5px 0px rgb(108, 108, 108);
+  height: 2.7vh;
+  width: 1.4vw;
   display: flex;
   justify-content: center;
+  position: fixed;
   background-color: beige;
   border: none;
-  padding-left: 3%;
+  padding-left: 1.4%;
   padding-right: 1%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  -webkit-transition: 0.2s;
-}
-body .main-coleccion .contenedordesplegado .carritodesplegado .flecha-carrito:hover {
-  box-shadow: 0px 1px 0px 0px rgb(108, 108, 108);
+  -webkit-transition: 0.3s;
+  z-index: 1;
 }
 body .main-coleccion .contenedordesplegado .carritodesplegado .flecha-carrito img {
   height: 100%;
   width: 100%;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .flecha-carrito:hover {
+  height: 2.9vh;
+  width: 1.6vw;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .borrar-todo {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.1vh;
+  width: 3vw;
+  margin-left: 14.7vw;
+  margin-top: 1vh;
+  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
+  font-size: 62%;
+  border: none;
+  box-shadow: -1px 1px 5px 0px rgb(108, 108, 108);
+  background-color: beige;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .borrar-todo:hover {
+  height: 2.4vh;
+  width: 3.3vw;
+  font-size: 65%;
 }
 body .main-coleccion .contenedordesplegado .carritodesplegado .carrito-vacio {
   font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
@@ -948,96 +991,93 @@ body .main-coleccion .contenedordesplegado .carritodesplegado .carrito-vacio {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 56.3vh;
 }
-body .main-coleccion .contenedordesplegado .carritodesplegado .item1 {
-  margin-left: 7%;
-  max-width: 100%;
+body .main-coleccion .contenedordesplegado .carritodesplegado .carrito-productos {
+  margin-top: 5vh;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .carrito-productos .item2 {
   height: 18vh;
+  width: 17.2vw;
   margin-top: 1.5vh;
-}
-body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito {
+  margin-left: 4%;
   background-color: white;
-  height: 100%;
-  display: flex;
-  width: 16.3vw;
   box-shadow: 0px 0px 3px 0px rgb(108, 108, 108);
-}
-body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito {
   display: flex;
+  position: relative;
 }
-body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito .img-carrito {
-  width: 5.8vw;
+body .main-coleccion .contenedordesplegado .carritodesplegado .carrito-productos .item2 .remeracarrito2 {
   height: 93%;
-  margin-left: 2%;
-  margin-top: 2%;
+  margin-top: 0.6vh;
+  margin-left: 0.3vw;
 }
-body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito .nombre-producto {
-  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
-  font-size: 70%;
-  width: 7vw;
-  margin-left: 1vw;
+body .main-coleccion .contenedordesplegado .carritodesplegado .carrito-productos .item2 .info-productos {
   margin-top: 1vh;
+  margin-left: 1.5vh;
+  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
 }
-body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito .precio-producto {
+body .main-coleccion .contenedordesplegado .carritodesplegado .carrito-productos .item2 .info-productos .nombre-producto {
+  font-size: 70%;
+  margin-bottom: 0;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .carrito-productos .item2 .info-productos .precio-producto {
+  font-size: 75%;
+  margin-left: 8%;
+  margin-top: 5%;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .carrito-productos .item2 .info-productos .bottom {
+  margin-top: 8vh;
+  display: flex;
+  gap: 0.4vw;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .carrito-productos .item2 .info-productos .bottom .cantidad-producto {
+  font-size: 60%;
+  width: 4.5vw;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .carrito-productos .item2 .info-productos .bottom .btn-restar {
+  width: 0.9vw;
+  font-size: 105%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: rgb(238, 238, 238);
+  height: 1.8vh;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .carrito-productos .item2 .info-productos .bottom .btn-sumar {
+  width: 0.9vw;
+  font-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: rgb(238, 238, 238);
+  height: 1.8vh;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .carrito-productos .item2 .info-productos .bottom .subtotal {
+  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
+  font-size: 75%;
+  margin-left: 0.2vw;
+}
+body .main-coleccion .contenedordesplegado .carritodesplegado .carrito-productos .item2 .borrar {
+  height: 2.1vh;
+  width: 1.1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
+  font-size: 70%;
+  border: none;
+  background-color: rgb(238, 238, 238);
+  margin-top: 0.6vh;
   position: absolute;
-  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
-  font-size: 70%;
-  margin-left: 7.5vw;
-  margin-top: 4vh;
-}
-body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito .info-producto {
-  display: flex;
-  position: fixed;
-  margin-left: 6.5vw;
-  margin-top: 15vh;
-  width: 11vw;
-  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
-  font-size: 65%;
-  gap: 0.3vw;
-}
-body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito .info-producto .btn-restar {
-  width: 0.9vw;
-  height: 1.8vh;
-  font-size: 160%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: rgb(238, 238, 238);
-}
-body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito .info-producto .btn-sumar {
-  width: 0.9vw;
-  height: 1.8vh;
-  font-size: 150%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: rgb(238, 238, 238);
-}
-body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito .info-producto .subtotal-producto {
-  font-size: 0.7vw;
-  margin-left: 0vw;
-}
-body .main-coleccion .contenedordesplegado .carritodesplegado .item1 .remera-carrito .cont-img-carrito .borrar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 2.3vh;
-  width: 1.3vw;
-  border: none;
-  margin-top: 0.7vh;
-  margin-left: 0.7vw;
-  font-family: "Neue-Helvetica", "Helvetica", "Arial", "sans-serif";
-  font-size: 70%;
-  background-color: rgb(238, 238, 238);
+  margin-left: 15.7vw;
 }
 body .main-coleccion .contenedordesplegado .carritodesplegado .sec-total {
   display: flex;
   width: 100%;
   height: 8vh;
-  margin-top: 2vh;
+  margin-top: 1.5vh;
   box-shadow: 0px -1px 5px 0px rgb(108, 108, 108);
 }
 body .main-coleccion .contenedordesplegado .carritodesplegado .sec-total .contenedor-total {
@@ -1107,6 +1147,10 @@ body .main-coleccion .clasificacion {
   margin-bottom: 0;
   gap: 5vh;
   margin-left: 3vw;
+}
+body .main-coleccion .clasificacion a {
+  text-decoration: none;
+  color: rgb(71, 71, 71);
 }
 @media screen and (max-width: 480px) {
   body .main-coleccion .clasificacion {
@@ -1641,74 +1685,6 @@ body .box-coleccion .camisas .c-secundario .CAMISA1 {
     margin-top: 56vh;
   }
 }
-body .box-coleccion .camisas .c-secundario .camisa-2 {
-  width: 14.7vw;
-  height: 47vh;
-  box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
-  -webkit-transition: 0.3s;
-}
-@media screen and (max-width: 1024px) {
-  body .box-coleccion .camisas .c-secundario .camisa-2 {
-    width: 36vw;
-    height: 74vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  body .box-coleccion .camisas .c-secundario .camisa-2 {
-    width: 29vw;
-    height: 76vh;
-  }
-}
-@media screen and (max-width: 480px) {
-  body .box-coleccion .camisas .c-secundario .camisa-2 {
-    width: 80vw;
-    height: 67vh;
-  }
-}
-@media screen and (max-width: 320px) {
-  body .box-coleccion .camisas .c-secundario .camisa-2 {
-    height: 62vh;
-    width: 87vw;
-  }
-}
-body .box-coleccion .camisas .c-secundario .camisa-2:hover {
-  scale: 103%;
-  transition: 0.3s;
-}
-body .box-coleccion .camisas .c-secundario .camisa-3 {
-  width: 14.7vw;
-  height: 47vh;
-  box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
-  -webkit-transition: 0.3s;
-}
-@media screen and (max-width: 1024px) {
-  body .box-coleccion .camisas .c-secundario .camisa-3 {
-    width: 36vw;
-    height: 74vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  body .box-coleccion .camisas .c-secundario .camisa-3 {
-    width: 29vw;
-    height: 76vh;
-  }
-}
-@media screen and (max-width: 480px) {
-  body .box-coleccion .camisas .c-secundario .camisa-3 {
-    width: 80vw;
-    height: 67vh;
-  }
-}
-@media screen and (max-width: 320px) {
-  body .box-coleccion .camisas .c-secundario .camisa-3 {
-    height: 62vh;
-    width: 87vw;
-  }
-}
-body .box-coleccion .camisas .c-secundario .camisa-3:hover {
-  scale: 103%;
-  transition: 0.3s;
-}
 body .box-coleccion .pantalones {
   margin-top: 15vh;
   height: 110vh;
@@ -1946,74 +1922,6 @@ body .box-coleccion .pantalones .p-secundario .PANTALON1 {
     margin-top: 56vh;
   }
 }
-body .box-coleccion .pantalones .p-secundario .pantalon-2 {
-  width: 14.7vw;
-  height: 47vh;
-  box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
-  -webkit-transition: 0.3s;
-}
-@media screen and (max-width: 1024px) {
-  body .box-coleccion .pantalones .p-secundario .pantalon-2 {
-    width: 36vw;
-    height: 74vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  body .box-coleccion .pantalones .p-secundario .pantalon-2 {
-    width: 29vw;
-    height: 76vh;
-  }
-}
-@media screen and (max-width: 480px) {
-  body .box-coleccion .pantalones .p-secundario .pantalon-2 {
-    width: 80vw;
-    height: 67vh;
-  }
-}
-@media screen and (max-width: 320px) {
-  body .box-coleccion .pantalones .p-secundario .pantalon-2 {
-    height: 62vh;
-    width: 87vw;
-  }
-}
-body .box-coleccion .pantalones .p-secundario .pantalon-2:hover {
-  scale: 103%;
-  transition: 0.3s;
-}
-body .box-coleccion .pantalones .p-secundario .pantalon-3 {
-  width: 14.7vw;
-  height: 47vh;
-  box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
-  -webkit-transition: 0.3s;
-}
-@media screen and (max-width: 1024px) {
-  body .box-coleccion .pantalones .p-secundario .pantalon-3 {
-    width: 36vw;
-    height: 74vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  body .box-coleccion .pantalones .p-secundario .pantalon-3 {
-    width: 29vw;
-    height: 76vh;
-  }
-}
-@media screen and (max-width: 480px) {
-  body .box-coleccion .pantalones .p-secundario .pantalon-3 {
-    width: 80vw;
-    height: 67vh;
-  }
-}
-@media screen and (max-width: 320px) {
-  body .box-coleccion .pantalones .p-secundario .pantalon-3 {
-    height: 62vh;
-    width: 87vw;
-  }
-}
-body .box-coleccion .pantalones .p-secundario .pantalon-3:hover {
-  scale: 103%;
-  transition: 0.3s;
-}
 body .box-coleccion .bermudas {
   margin-top: 15vh;
   height: 110vh;
@@ -2250,74 +2158,6 @@ body .box-coleccion .bermudas .b-secundario .BERMUDA1 {
   body .box-coleccion .bermudas .b-secundario .BERMUDA1 {
     margin-top: 56vh;
   }
-}
-body .box-coleccion .bermudas .b-secundario .bermuda-2 {
-  width: 14.7vw;
-  height: 47vh;
-  box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
-  -webkit-transition: 0.3s;
-}
-@media screen and (max-width: 1024px) {
-  body .box-coleccion .bermudas .b-secundario .bermuda-2 {
-    width: 36vw;
-    height: 74vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  body .box-coleccion .bermudas .b-secundario .bermuda-2 {
-    width: 29vw;
-    height: 76vh;
-  }
-}
-@media screen and (max-width: 480px) {
-  body .box-coleccion .bermudas .b-secundario .bermuda-2 {
-    width: 80vw;
-    height: 67vh;
-  }
-}
-@media screen and (max-width: 320px) {
-  body .box-coleccion .bermudas .b-secundario .bermuda-2 {
-    height: 62vh;
-    width: 87vw;
-  }
-}
-body .box-coleccion .bermudas .b-secundario .bermuda-2:hover {
-  scale: 103%;
-  transition: 0.3s;
-}
-body .box-coleccion .bermudas .b-secundario .bermuda-3 {
-  width: 14.7vw;
-  height: 47vh;
-  box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
-  -webkit-transition: 0.3s;
-}
-@media screen and (max-width: 1024px) {
-  body .box-coleccion .bermudas .b-secundario .bermuda-3 {
-    width: 36vw;
-    height: 74vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  body .box-coleccion .bermudas .b-secundario .bermuda-3 {
-    width: 29vw;
-    height: 76vh;
-  }
-}
-@media screen and (max-width: 480px) {
-  body .box-coleccion .bermudas .b-secundario .bermuda-3 {
-    width: 80vw;
-    height: 67vh;
-  }
-}
-@media screen and (max-width: 320px) {
-  body .box-coleccion .bermudas .b-secundario .bermuda-3 {
-    height: 62vh;
-    width: 87vw;
-  }
-}
-body .box-coleccion .bermudas .b-secundario .bermuda-3:hover {
-  scale: 103%;
-  transition: 0.3s;
 }
 body .box-coleccion .accesorios {
   margin-top: 15vh;
@@ -2559,74 +2399,6 @@ body .box-coleccion .accesorios .a-secundario .ACCESORIO1 {
   body .box-coleccion .accesorios .a-secundario .ACCESORIO1 {
     margin-top: 56vh;
   }
-}
-body .box-coleccion .accesorios .a-secundario .accesorio-2 {
-  width: 14.7vw;
-  height: 47vh;
-  box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
-  -webkit-transition: 0.3s;
-}
-@media screen and (max-width: 1024px) {
-  body .box-coleccion .accesorios .a-secundario .accesorio-2 {
-    width: 36vw;
-    height: 74vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  body .box-coleccion .accesorios .a-secundario .accesorio-2 {
-    width: 29vw;
-    height: 76vh;
-  }
-}
-@media screen and (max-width: 480px) {
-  body .box-coleccion .accesorios .a-secundario .accesorio-2 {
-    width: 80vw;
-    height: 67vh;
-  }
-}
-@media screen and (max-width: 320px) {
-  body .box-coleccion .accesorios .a-secundario .accesorio-2 {
-    height: 62vh;
-    width: 87vw;
-  }
-}
-body .box-coleccion .accesorios .a-secundario .accesorio-2:hover {
-  scale: 103%;
-  transition: 0.3s;
-}
-body .box-coleccion .accesorios .a-secundario .accesorio-3 {
-  width: 14.7vw;
-  height: 47vh;
-  box-shadow: 4px 4px 10px 0px rgba(117, 113, 113, 0.61);
-  -webkit-transition: 0.3s;
-}
-@media screen and (max-width: 1024px) {
-  body .box-coleccion .accesorios .a-secundario .accesorio-3 {
-    width: 36vw;
-    height: 74vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  body .box-coleccion .accesorios .a-secundario .accesorio-3 {
-    width: 29vw;
-    height: 76vh;
-  }
-}
-@media screen and (max-width: 480px) {
-  body .box-coleccion .accesorios .a-secundario .accesorio-3 {
-    width: 80vw;
-    height: 67vh;
-  }
-}
-@media screen and (max-width: 320px) {
-  body .box-coleccion .accesorios .a-secundario .accesorio-3 {
-    height: 62vh;
-    width: 87vw;
-  }
-}
-body .box-coleccion .accesorios .a-secundario .accesorio-3:hover {
-  scale: 103%;
-  transition: 0.3s;
 }
 
 /*FOOTER DIFERENCIADO*/

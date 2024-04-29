@@ -1,0 +1,31 @@
+[
+    {
+        "titulo": "REMERA BLANCA",
+        "precio": 3000,
+        "img": "../img/ropa KODE/remeras/REMERA0.jpg",
+        "posicion": "principal",
+        "categoria": "remeras"
+    },
+    {
+        "titulo": "REMERA AZUL",
+        "precio": 3200,
+        "img":"../img/ropa KODE/remeras/REMERA1.jpg",
+        "posicion":"secundaria",
+        "categoria": "remeras"
+
+    }, 
+    {
+        "titulo":"REMERA BEIGE",
+        "precio": 3300,
+        "img": "../img/ropa KODE/remeras/REMERA2.jpg",
+        "posicion":"secundaria",
+        "categoria": "remeras"
+    },
+    {
+        "titulo": "REMERA CELESTE",
+        "precio": 3400,
+        "img":"../img/ropa KODE/remeras/REMERA4.jpg",
+        "posicion":"secundaria",
+        "categoria": "remeras"
+    }
+]
